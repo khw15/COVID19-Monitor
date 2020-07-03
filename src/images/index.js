@@ -1,0 +1,14 @@
+export { default as TANGAN } from './clean-hands.svg'
+export { default as DOKTER } from './doctor.svg'
+export { default as MASKER } from './flu-mask.svg'
+export { default as KESEHATAN } from './healthcare.svg'
+export { default as NEWS } from './news.svg'
+export { default as SOCIAL_DISTANCING } from './social-distancing.svg'
+export { default as BENDERA } from './flag-id.svg'
+export { default as TIME } from './time.svg'
+export { default as INFO } from './info.svg'
+export { default as BAKTERI } from "./bacteria.svg"
+export { default as BERSIN } from "./sneeze.svg"
+export { default as KUMPUL } from "./distance.svg" 
+export { default as FB } from './fb.svg'
+export { default as TW } from './tw.svg'

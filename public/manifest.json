@@ -1,0 +1,32 @@
+{
+  "short_name": "COVID-19 Stats",
+  "name": "COVID-19 Stats",
+  "description": "Informasi statistik COVID-19",
+  "icons": [
+    {
+      "src": "/assets/Logo/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/Logo/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/Logo/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
