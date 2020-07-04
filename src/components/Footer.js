@@ -29,7 +29,7 @@ const Footer = () => {
           Fon oleh {' '}
           <a 
             href="https://github.com/andrew-paglinawan/QuicksandFamily"
-            title="Atribusi Font"
+            title="andrew-paglinawan"
             className="text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,12 +40,12 @@ const Footer = () => {
         <span className="p-1">
           {'</>'} with 💙 by{' '}
           <a 
-          href="mailto:webmaster@alfaisal.my.id" 
+          href="mailto:webmaster@i315.my.id" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
           >
-            더-Quiett
+            i315
           </a>{' '}
         </span>
       </p>
