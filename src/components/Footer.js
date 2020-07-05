@@ -44,6 +44,7 @@ const Footer = () => {
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
+          title="i315"
           >
             i315
           </a>{' '}
@@ -53,12 +54,13 @@ const Footer = () => {
         <span className="p-1">
           API oleh{' '}
           <a 
-          href="https://github.com/mathdroid/covid-19-api" 
+          href="https://github.com/disease-sh/API" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
+          title="disease.sh - Open Disease API"
           >
-            MathDroid Covid API
+            disease.sh - Open Disease API
           </a>
         </span>
         </p>

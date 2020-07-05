@@ -72,7 +72,7 @@ export const idData = async () => {
   export const globalDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}all`
+        `${NinjaUrl}all?lastdays=all`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
