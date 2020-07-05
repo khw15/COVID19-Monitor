@@ -271,7 +271,7 @@ const App = () => {
 
   useEffect(() => {
     const localHours = new Date().getHours()
-    setDarkMode(!(localHours >= 5 && localHours <= 17))
+    setDarkMode(!(localHours >= 6 && localHours <= 17))
 
     getIDData()
     setInterval(getIDData, 300000)
@@ -318,7 +318,7 @@ const App = () => {
             alt="Clock"
             className="inline clock mr-1"
           />{' '}
-          Diperbaharui <ReactTimeAgo date={update} live={false} formatter={formatter} />{' '}
+          Diperbarui <ReactTimeAgo date={update} live={false} formatter={formatter} />{' '}
         </p>
       </h3>
       <div className="body w-11/12 lg:w-5/6 mx-auto clearfix">
@@ -676,12 +676,11 @@ const App = () => {
         >
           {' '}
         situs web CDC
-        </a>{' '}dan 
+        </a>{' '}dan{' '}
         <a href="https://fk.unair.ac.id/mengenal-apa-itu-virus-corona/"
         target="_blank"
         rel="noopener noreferrer"
         >
-          {' '}
         F. Kedokteran Unair
         </a>
       </p>
@@ -700,7 +699,7 @@ const App = () => {
           Parah). 
           <br /><br />
           Virus korona terbaru yang ditemukan yang ditemukan di Wuhan, Tiongkok, pada bulan 
-          Desember 2019 diberi nama <i>SARS Coronavirus</i> 2 (SARS-CoV-2) dan menyebabkan penyakit 
+          Desember 2019 diberi nama <i>SARS Coronavirus</i> 2 (SARS-CoV-2) dan menyebabkan penyakit{' '} 
           <i>Coronavirus Disease</i> 2019 (COVID-19).
         </p>
       </div>

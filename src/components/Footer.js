@@ -63,21 +63,21 @@ const Footer = () => {
             disease.sh - Open Disease API
           </a>
         </span>
-        </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <afiliasi>
-          <span className="p-1 text-red-600">
-            KAMI TIDAK BERAFILIASI DENGAN PEMERINTAH
-          </span>
-        </afiliasi>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <disclaimer-kerugian>
-          <span className="p-1 text-red-600">
+        <span className="p-1 text-red-600">
+          <afiliasi>
+              KAMI TIDAK BERAFILIASI DENGAN PEMERINTAH
+          </afiliasi>
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1 text-red-600">
+          <afiliasi>
             Segala kesalahan dan/atau kerugian yang ditimbulkan oleh data yang ditayangkan di 
             situs ini bukan tanggung jawab pengembang
-          </span>
-        </disclaimer-kerugian>
+          </afiliasi>
+        </span>
       </p>
     </footer>
   )
