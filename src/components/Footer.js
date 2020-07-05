@@ -40,7 +40,7 @@ const Footer = () => {
         <span className="p-1">
           {'</>'} with 💙 by{' '}
           <a 
-          href="mailto:webmaster@i315.my.id" 
+          href="mailto:i315@i315.my.id" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
