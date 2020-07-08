@@ -37,18 +37,6 @@ const Footer = () => {
             andrew-paglinawan
           </a>
         </span>
-        <span className="p-1">
-          {'</>'} with 💙 by{' '}
-          <a 
-          href="mailto:i315@i315.my.id" 
-          className="text-blue-500"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="i315"
-          >
-            i315
-          </a>{' '}
-        </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
@@ -65,9 +53,23 @@ const Footer = () => {
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+          Dipersembahkan oleh{' '}
+          <a 
+          href="mailto:i315@i315.my.id" 
+          className="text-blue-500"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="i315"
+          >
+            i315
+          </a>{' '}
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
-              KAMI TIDAK BERAFILIASI DENGAN PEMERINTAH
+              SITUS INI TIDAK BERAFILIASI DENGAN PEMERINTAH
           </afiliasi>
         </span>
       </p>

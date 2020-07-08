@@ -9,18 +9,18 @@ const Kontak = () => {
             </colgroup>
             <thead>
                 <tr className="bg-gray-200">
-                    <th className="border-b px-2 md:px-4 py-4 font-medium text-left rounded-tl-md text-sm md:text-base">
-                        Kementerian / Lembaga
+                    <th className="border-b px-2 md:px-4 py-4 font-medium text-left rounded-tl-md text-sm md:text-base noselect">
+                        Kementerian/Lembaga
                     </th>
-                    <th className="border-b border-1 px-2 md:px4 py-4 font-medium rounded-tr-md text-sm md:text:base">
+                    <th className="border-b border-1 px-2 md:px4 py-4 font-medium rounded-tr-md text-sm md:text:base noselect">
                         Kontak Layanan
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody translate="no">
 
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Halo Kemkes
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
@@ -29,7 +29,7 @@ const Kontak = () => {
                 </tr>
 
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Layanan Pengaduan Bansos Kementerian Sosial
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
@@ -43,7 +43,7 @@ const Kontak = () => {
                 </tr>
 
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Bantuan Langsung Tunai Desa
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
@@ -51,7 +51,7 @@ const Kontak = () => {
                     </td>
                 </tr>
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Pembebasan Biaya Listrik (PLN)
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
@@ -63,7 +63,7 @@ const Kontak = () => {
                 </tr>
 
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Restrukturisasi Kredit OJK
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
@@ -79,7 +79,7 @@ const Kontak = () => {
                 </tr>
 
                 <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base">
+                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Ombudsman Pusat
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">

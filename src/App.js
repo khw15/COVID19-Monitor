@@ -296,7 +296,7 @@ const App = () => {
         </a>
       </div>
 
-      <h2 className="text-5xl p-5 font-hairline noselect ind">
+      <h2 className="text-5xl p-5 font-hairline noselect ind" translate="no">
         Indonesia{' '}
         <img src={BENDERA} width="70" className="inline mb-1" alt="" />
       </h2>
@@ -346,7 +346,7 @@ const App = () => {
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
         * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kementerian Kesehatan
-        RI pada hari ini atau keterlambatan pembaruan data
+        Republik Indonesia pada hari ini atau keterlambatan pembaruan data
       </p>
       <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 text-left noselect">
         Total
@@ -567,7 +567,7 @@ const App = () => {
         />
         <Tips
           image={SOCIAL_DISTANCING}
-          title="Jaga jarak setidaknya 1 meter dengan orang lain"
+          title="Jaga jarak setidaknya 2 meter dengan orang lain"
           description="Ketika seseorang 
           batuk, bersin, atau bicara, orang tersebut mengeluarkan percikan dari hidung atau mulutnya 
           dan percikan ini dapat membawa virus. Jika Anda terlalu dekat, Anda dapat menghirup percikan 
@@ -578,7 +578,7 @@ const App = () => {
           title="Hindari pergi ke tempat-tempat ramai"
           description="Ketika orang-orang berkumpul bersama dalam kerumunan, Anda memiliki kemungkinan
            untuk melakukan kontak erat dengan orang yang terinfeksi COVID-19 dan lebih sulit untuk 
-           menjaga jarak fisik minimal 1 meter."
+           menjaga jarak fisik minimal 2 meter."
         />
         <Tips
           image={DOKTER}
@@ -640,7 +640,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Gejala yang Ditimbulkan oleh COVID-19
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
         <p>Orang yang terinfeksi COVID-19 memiliki berbagai gejala yang dilaporkan - mulai dari 
           gejala ringan hingga parah. Gejala dapat muncul 2-14 hari setelah terpapar 
           virus. Orang dengan gejala di bawah ini mungkin terinfeksi COVID-19:</p>
@@ -688,7 +688,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Apa yang Dimaksud Dengan COVID-19?
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
         <p>
           Virus korona adalah sebutan untuk jenis virus yang dapat menyebabkan penyakit pada 
           hewan dan manusia. Disebut korona karena bentuknya yang seperti mahkota 
@@ -718,7 +718,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Bagaimana COVID-19 menular?
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
         <p>
           Penularan terjadi melalui <i><b>droplet</b></i> (butir-butir tetesan cairan) dari hidung atau mulut 
           yang menyebar saat pembawa virus COVID-19 batuk, bersin atau meler. Tetesan cairan 
@@ -746,7 +746,7 @@ const App = () => {
       </p>
 
       <h2 className="md:w-2/3 py-4 px-2 mt-4 mx-auto text-2xl noselect">
-        Kontak COVID-19 Indonesia
+        Kontak Layanan Kementerian/Lembaga untuk COVID-19
       </h2>
 
       <div className="px-2 mt-4">
@@ -755,11 +755,21 @@ const App = () => {
         </Fade>
       </div>
 
+      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
+        Sumber{' '}
+        <a href="https://covid19.go.id/p/konten/kontak-layanan-kementerianlembaga-untuk-covid-19"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          {' '}
+        situs COVID19.GO.ID
+        </a>
+      </p>
 
       <h2 className="md:w-2/3 py-4 px-2 mt-10 mx-auto text-2xl noselect">
         Dapatkan Informasi Terbaru COVID-19 di Indonesia
       </h2>
-      <div className="tweets p-4 md:flex md:justify-around mx-auto">
+      <div className="tweets p-4 md:flex md:justify-around mx-auto noselect" translate="no">
         <Fade delay={50}>
           <div
             className={`tweet w-5/6 md:w-1/3 lg:w-1/4 mx-auto md:mx-2 mb-4 md:mb-0 shadow ${
@@ -768,7 +778,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="BNPB_Indonesia"
+              screenName="KemenkesRI"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
@@ -781,7 +791,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="BNPB_Indonesia"
+              screenName="KemenkesRI"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
@@ -797,7 +807,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="KawalCOVID19"
+              screenName="BNPB_Indonesia"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
@@ -810,7 +820,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="KawalCOVID19"
+              screenName="BNPB_Indonesia"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
@@ -826,7 +836,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="KemenkesRI"
+              screenName="KawalCOVID19"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
@@ -839,7 +849,7 @@ const App = () => {
           >
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName="KemenkesRI"
+              screenName="KawalCOVID19"
               chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
@@ -849,13 +859,13 @@ const App = () => {
         </Fade>
       </div>
 
-      <div className="mt-10 md:mt-10 text-3xl">
+      <div className="mt-10 md:mt-10 text-3xl" translate="no">
         #PakaiMasker{' '}
         <span role="img" aria-label="home">
           😷
         </span>
         <br />
-        Sehat Negeriku!{' '}
+        Indonesia Bisa!{' '}
         <span role="img" aria-label="strong">
           💪
         </span>
