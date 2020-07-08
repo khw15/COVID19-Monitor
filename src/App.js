@@ -640,7 +640,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Gejala yang Ditimbulkan oleh COVID-19
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
         <p>Orang yang terinfeksi COVID-19 memiliki berbagai gejala yang dilaporkan - mulai dari 
           gejala ringan hingga parah. Gejala dapat muncul 2-14 hari setelah terpapar 
           virus. Orang dengan gejala di bawah ini mungkin terinfeksi COVID-19:</p>
@@ -688,7 +688,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Apa yang Dimaksud Dengan COVID-19?
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
         <p>
           Virus korona adalah sebutan untuk jenis virus yang dapat menyebabkan penyakit pada 
           hewan dan manusia. Disebut korona karena bentuknya yang seperti mahkota 
@@ -704,7 +704,7 @@ const App = () => {
         </p>
       </div>
 
-      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
+      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0">
         Sumber{' '}
         <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
         target="_blank"
@@ -718,7 +718,7 @@ const App = () => {
       <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
         Bagaimana COVID-19 menular?
       </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg noselect">
+      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
         <p>
           Penularan terjadi melalui <i><b>droplet</b></i> (butir-butir tetesan cairan) dari hidung atau mulut 
           yang menyebar saat pembawa virus COVID-19 batuk, bersin atau meler. Tetesan cairan 
@@ -754,17 +754,6 @@ const App = () => {
           <Kontak />
         </Fade>
       </div>
-
-      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
-        Sumber{' '}
-        <a href="https://covid19.go.id/p/konten/kontak-layanan-kementerianlembaga-untuk-covid-19"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          {' '}
-        situs COVID19.GO.ID
-        </a>
-      </p>
 
       <h2 className="md:w-2/3 py-4 px-2 mt-10 mx-auto text-2xl noselect">
         Dapatkan Informasi Terbaru COVID-19 di Indonesia

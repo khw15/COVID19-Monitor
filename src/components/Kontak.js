@@ -30,7 +30,7 @@ const Kontak = () => {
 
                 <tr className="bg-white">
                     <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
-                        Layanan Pengaduan Bansos Kementerian Sosial
+                        Pengaduan Bansos Kementerian Sosial
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
                         <a href="tel:157" className="text-blue-400 block p-2">157</a>
@@ -83,7 +83,7 @@ const Kontak = () => {
                         Ombudsman Pusat
                     </td>
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
-                        <a href="mailto:covid19-pusat@ombudsman.go.id" className="text-blue-400 block p-2">
+                        <a href="mailto:covid19-pusat@ombudsman.go.id" className="text-blue-400 text-xs block p-2">
                             covid19-pusat@ombudsman.go.id
                             </a>
                     </td>
