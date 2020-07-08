@@ -9,7 +9,7 @@ const TombolGrafik = (props) => {
         className="btn-apply mx-auto my-6 bg-blue-500 py-2 text-sm text-white px-6 rounded shadow"
         onClick={props.clickFn}
       >
-        {props.chartVisible ? 'Sembunyikan' : 'Tampilkan'} Grafik
+        {props.chartVisible ? 'Sembunyikan' : 'Tampilkan'} Bagan
       </button>
       <div
         className={
