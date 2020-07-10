@@ -42,13 +42,13 @@ const Footer = () => {
         <span className="p-1">
           API oleh{' '}
           <a 
-          href="https://github.com/disease-sh/API" 
+          href="https://disease.sh/" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="disease.sh - Open Disease API"
+          title="disease.sh &#8211; Open Disease API"
           >
-            disease.sh - Open Disease API
+            disease.sh &#8211; Open Disease API
           </a>
         </span>
       </p>

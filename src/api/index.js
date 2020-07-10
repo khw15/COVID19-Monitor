@@ -1,10 +1,9 @@
-// const MathdroidUrl = "https://covid19.mathdro.id/api/";
 const NinjaUrl = "https://disease.sh/v3/covid-19/";
 
 export const idData = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}countries/id/`
+        `${NinjaUrl}countries/Indonesia/`
       ).then((res) => res.json())
       return {
         confirmed: data.todayCases,
@@ -36,13 +35,14 @@ export const idData = async () => {
   export const idDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}countries/id`
+        `${NinjaUrl}countries/Indonesia`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
         recovered: data.recovered,
         deaths: data.deaths,
         active: data.active,
+        population: data.population,
         todayCases: data.todayCases,
         todayDeaths: data.todayDeaths,
         todayRecovered: data.todayRecovered,
@@ -57,7 +57,7 @@ export const idData = async () => {
   export const idDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/id?lastdays=all`
+        `${NinjaUrl}historical/Indonesia?lastdays=all`
       ).then((res) => res.json())
       return {
         confirmed: data.timeline.cases,

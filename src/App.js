@@ -44,6 +44,7 @@ const App = () => {
   // ID
   // Actual Value
   const [testsID, setTestsID] = useState(0)
+  const [popID, setPopID] = useState(0)
   const [confirmedID, setConfirmedID] = useState(0)
   const [recoveredID, setRecoveredID] = useState(0)
   const [deathsID, setDeathsID] = useState(0)
@@ -53,6 +54,7 @@ const App = () => {
   const [todayRecoveredID, setTodayRecoveredID] = useState(0)
   // Percentage
   const [confirmedIDPercent, setConfirmedIDPercent] = useState(0)
+  const [testsIDPercent, setTestsIDPercent] = useState(0)
   const [deathsIDPercent, setDeathsIDPercent] = useState(0)
   const [recoveredIDPercent, setRecoveredIDPercent] = useState(0)
   const [activeIDPercent, setActiveIDPercent] = useState(0)
@@ -71,6 +73,10 @@ const App = () => {
   const [activeIDPercentVisibility, setActiveIDPercentVisibility] = useState(
     false
   )
+  const [
+    testsIDPercentVisibility,
+    setTestsIDPercentVisibility,
+  ] = useState(false)
   // Historical
   const [
     idHistoricalDataConfirmedLabel,
@@ -166,8 +172,10 @@ const App = () => {
       setTestsID(res.tests)
       setConfirmedID(res.confirmed)
       setRecoveredID(res.recovered)
+      setPopID(res.population)
       setDeathsID(res.deaths)
       setActiveID(res.active)
+      setTestsIDPercent(((res.tests / res.population) * 100).toFixed(2))
       setConfirmedIDPercent(((res.confirmed / res.tests) * 100).toFixed(2))
       setDeathsIDPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
       setRecoveredIDPercent(((res.recovered / res.confirmed) * 100).toFixed(2))
@@ -356,10 +364,26 @@ const App = () => {
       </h3>
       <div className="body w-11/12 lg:w-5/6 mx-auto clearfix">
         <Box
+          classNameCount="text-3xl md:text-4xl leading-normal block"
+          title="Populasi"
+          count={popID}
+          delay={50}
+        />
+        
+        <Box
+          hasPercent
           classNameCount="text-3xl md:text-4xl leading-normal block text-blue-700"
           title="Tes Dilakukan"
           count={testsID}
-          delay={50}
+          onEnd={() => setTestsIDPercentVisibility(true)}
+          percentVisibility={
+            testsIDPercentVisibility ? 'text-sm text-gray-600' : 'invisible'
+          }
+          percentValue={testsIDPercent}
+          delay={100}
+          help={`Dari ${popID.toLocaleString()} penduduk Indonesia ${testsIDPercent}% telah dites`}
+          helpBg="bg-white"
+          helpBorder="border-gray-600"
         />
 
         <Box
@@ -373,7 +397,7 @@ const App = () => {
           }
           percentValue={confirmedIDPercent}
           delay={100}
-          help={`Dari ${testsID.toLocaleString()} tes yang dilakukan ${confirmedIDPercent}% positif`}
+          help={`Dari ${testsID.toLocaleString()} tes yang dilakukan ${confirmedIDPercent}% positif COVID-19`}
           helpBg="bg-white"
           helpBorder="border-gray-600"
         />
@@ -389,7 +413,7 @@ const App = () => {
           }
           percentValue={recoveredIDPercent}
           delay={150}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${recoveredIDPercent}% sembuh`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif COVID-19 ${recoveredIDPercent}% sembuh`}
           helpBg="bg-green-100"
           helpBorder="border-green-500"
         />
@@ -405,7 +429,7 @@ const App = () => {
           }
           percentValue={activeIDPercent}
           delay={250}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${activeIDPercent}% dalam perawatan`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif COVID-19 ${activeIDPercent}% dalam perawatan`}
           helpBg="bg-yellow-100"
           helpBorder="border-yellow-500"
         />
@@ -421,7 +445,7 @@ const App = () => {
           }
           percentValue={deathsIDPercent}
           delay={200}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${deathsIDPercent}% meninggal dunia`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif COVID-19 ${deathsIDPercent}% meninggal dunia`}
           helpBg="bg-red-100"
           helpBorder="border-red-500"
         />
@@ -468,7 +492,7 @@ const App = () => {
           }
           percentValue={confirmedGlobalPercent}
           delay={100}
-          help={`Dari ${testsGlobal.toLocaleString()} tes yang dilakukan ${confirmedGlobalPercent}% positif`}
+          help={`Dari ${testsGlobal.toLocaleString()} tes yang dilakukan ${confirmedGlobalPercent}% positif COVID-19`}
         />
 
         <Box
@@ -482,7 +506,7 @@ const App = () => {
           }
           percentValue={activeGlobalPercent}
           delay={250}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${activeGlobalPercent}% dalam perawatan`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif COVID-19 ${activeGlobalPercent}% dalam perawatan`}
           helpBg="bg-yellow-100"
           helpBorder="border-yellow-500"
         />
@@ -498,7 +522,7 @@ const App = () => {
           }
           percentValue={recoveredGlobalPercent}
           delay={150}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${recoveredGlobalPercent}% sembuh`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif COVID-19 ${recoveredGlobalPercent}% sembuh`}
           helpBg="bg-green-100"
           helpBorder="border-green-500"
         />
@@ -514,7 +538,7 @@ const App = () => {
           }
           percentValue={deathsGlobalPercent}
           delay={200}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${deathsGlobalPercent}% meninggal dunia`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif COVID-19 ${deathsGlobalPercent}% meninggal dunia`}
           helpBg="bg-red-100"
           helpBorder="border-red-500"
         />
@@ -641,7 +665,7 @@ const App = () => {
         Gejala yang Ditimbulkan oleh COVID-19
       </h2>
       <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
-        <p>Orang yang terinfeksi COVID-19 memiliki berbagai gejala yang dilaporkan - mulai dari 
+        <p>Orang yang terinfeksi COVID-19 memiliki berbagai gejala yang dilaporkan &#8211; mulai dari 
           gejala ringan hingga parah. Gejala dapat muncul 2-14 hari setelah terpapar 
           virus. Orang dengan gejala di bawah ini mungkin terinfeksi COVID-19:</p>
         <ul>
