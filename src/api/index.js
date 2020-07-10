@@ -42,7 +42,6 @@ export const idData = async () => {
         recovered: data.recovered,
         deaths: data.deaths,
         active: data.active,
-        population: data.population,
         todayCases: data.todayCases,
         todayDeaths: data.todayDeaths,
         todayRecovered: data.todayRecovered,

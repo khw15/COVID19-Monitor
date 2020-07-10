@@ -44,7 +44,6 @@ const App = () => {
   // ID
   // Actual Value
   const [testsID, setTestsID] = useState(0)
-  const [popID, setPopID] = useState(0)
   const [confirmedID, setConfirmedID] = useState(0)
   const [recoveredID, setRecoveredID] = useState(0)
   const [deathsID, setDeathsID] = useState(0)
@@ -54,7 +53,6 @@ const App = () => {
   const [todayRecoveredID, setTodayRecoveredID] = useState(0)
   // Percentage
   const [confirmedIDPercent, setConfirmedIDPercent] = useState(0)
-  const [testsIDPercent, setTestsIDPercent] = useState(0)
   const [deathsIDPercent, setDeathsIDPercent] = useState(0)
   const [recoveredIDPercent, setRecoveredIDPercent] = useState(0)
   const [activeIDPercent, setActiveIDPercent] = useState(0)
@@ -73,10 +71,6 @@ const App = () => {
   const [activeIDPercentVisibility, setActiveIDPercentVisibility] = useState(
     false
   )
-  const [
-    testsIDPercentVisibility,
-    setTestsIDPercentVisibility,
-  ] = useState(false)
   // Historical
   const [
     idHistoricalDataConfirmedLabel,
@@ -172,10 +166,8 @@ const App = () => {
       setTestsID(res.tests)
       setConfirmedID(res.confirmed)
       setRecoveredID(res.recovered)
-      setPopID(res.population)
       setDeathsID(res.deaths)
       setActiveID(res.active)
-      setTestsIDPercent(((res.tests / res.population) * 100).toFixed(2))
       setConfirmedIDPercent(((res.confirmed / res.tests) * 100).toFixed(2))
       setDeathsIDPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
       setRecoveredIDPercent(((res.recovered / res.confirmed) * 100).toFixed(2))
@@ -364,26 +356,10 @@ const App = () => {
       </h3>
       <div className="body w-11/12 lg:w-5/6 mx-auto clearfix">
         <Box
-          classNameCount="text-3xl md:text-4xl leading-normal block"
-          title="Populasi"
-          count={popID}
-          delay={50}
-        />
-        
-        <Box
-          hasPercent
           classNameCount="text-3xl md:text-4xl leading-normal block text-blue-700"
           title="Tes Dilakukan"
           count={testsID}
-          onEnd={() => setTestsIDPercentVisibility(true)}
-          percentVisibility={
-            testsIDPercentVisibility ? 'text-sm text-gray-600' : 'invisible'
-          }
-          percentValue={testsIDPercent}
-          delay={100}
-          help={`Dari ${popID.toLocaleString()} penduduk Indonesia ${testsIDPercent}% telah dites`}
-          helpBg="bg-white"
-          helpBorder="border-gray-600"
+          delay={50}
         />
 
         <Box
