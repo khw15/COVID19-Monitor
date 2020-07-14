@@ -40,284 +40,284 @@ const URL_TW_SHARE =
 const URL_FB_SHARE =
   'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcovid19.i315.my.id/'
 
-const App = () => {
-  // ID
-  // Actual Value
-  const [testsID, setTestsID] = useState(0)
-  const [confirmedID, setConfirmedID] = useState(0)
-  const [recoveredID, setRecoveredID] = useState(0)
-  const [deathsID, setDeathsID] = useState(0)
-  const [activeID, setActiveID] = useState(0)
-  const [confirmedTodayID, setConfirmedTodayID] = useState(0)
-  const [deathsTodayID, setDeathsTodayID] = useState(0)
-  const [todayRecoveredID, setTodayRecoveredID] = useState(0)
-  // Percentage
-  const [confirmedIDPercent, setConfirmedIDPercent] = useState(0)
-  const [deathsIDPercent, setDeathsIDPercent] = useState(0)
-  const [recoveredIDPercent, setRecoveredIDPercent] = useState(0)
-  const [activeIDPercent, setActiveIDPercent] = useState(0)
-  // Visibility
-  const [
-    confirmedIDPercentVisibility,
-    setConfirmedIDPercentVisibility,
-  ] = useState(false)
-  const [deathsIDPercentVisibility, setDeathsIDPercentVisibility] = useState(
-    false
-  )
-  const [
-    recoveredIDPercentVisibility,
-    setRecoveredIDPercentVisibility,
-  ] = useState(false)
-  const [activeIDPercentVisibility, setActiveIDPercentVisibility] = useState(
-    false
-  )
-  // Historical
-  const [
-    idHistoricalDataConfirmedLabel,
-    setIdHistoricalDataConfirmedLabel,
-  ] = useState([])
-  const [
-    idHistoricalDataConfirmedValue,
-    setIdHistoricalDataConfirmedValue,
-  ] = useState([])
-  const [
-    idHistoricalDataRecoveredLabel,
-    setIdHistoricalDataRecoveredLabel,
-  ] = useState([])
-  const [
-    idHistoricalDataRecoveredValue,
-    setIdHistoricalDataRecoveredValue,
-  ] = useState([])
-  const [
-    idHistoricalDataDeathsLabel,
-    setIdHistoricalDataDeathsLabel,
-  ] = useState([])
-  const [
-    idHistoricalDataDeathsValue,
-    setIdHistoricalDataDeathsValue,
-  ] = useState([])
-
-  // Global
-  const [testsGlobal, setTestsGlobal] = useState(0)
-  const [confirmedGlobal, setConfirmedGlobal] = useState(0)
-  const [recoveredGlobal, setRecoveredGlobal] = useState(0)
-  const [deathsGlobal, setDeathsGlobal] = useState(0)
-  const [activeGlobal, setActiveGlobal] = useState(0)
-  // Percentage
-  const [confirmedGlobalPercent, setConfirmedGlobalPercent] = useState(0)
-  const [deathsGlobalPercent, setDeathsGlobalPercent] = useState(0)
-  const [recoveredGlobalPercent, setRecoveredGlobalPercent] = useState(0)
-  const [activeGlobalPercent, setActiveGlobalPercent] = useState(0)
-  // Visibility
-  const [confirmedGlobalVisibility, setConfirmedGlobalVisibility] = useState(
-    false
-  )
-  const [deathGlobalVisibility, setDeathGlobalVisibility] = useState(false)
-  const [recoveredGlobalVisibility, setRecoveredGlobalVisibility] = useState(
-    false
-  )
-  const [activeGlobalVisibility, setActiveGlobalVisibility] = useState(false)
-  // Historical
-  const [
-    globalHistoricalDataConfirmedLabel,
-    setGlobalHistoricalDataConfirmedLabel,
-  ] = useState([])
-  const [
-    globalHistoricalDataConfirmedValue,
-    setGlobalHistoricalDataConfirmedValue,
-  ] = useState([])
-  const [
-    globalHistoricalDataRecoveredLabel,
-    setGlobalHistoricalDataRecoveredLabel,
-  ] = useState([])
-  const [
-    globalHistoricalDataRecoveredValue,
-    setGlobalHistoricalDataRecoveredValue,
-  ] = useState([])
-  const [
-    globalHistoricalDataDeathsLabel,
-    setGlobalHistoricalDataDeathsLabel,
-  ] = useState([])
-  const [
-    globalHistoricalDataDeathsValue,
-    setGlobalHistoricalDataDeathsValue,
-  ] = useState([])
-
-  const [countriesAffected, setCountriesAffected] = useState(0)
-  const [update, setUpdate] = useState('')
-  const [chartID, setChartID] = useState(false)
-  const [chartGlobal, setChartGlobal] = useState(false)
-  const [updateTimeVisibility, setUpdateTimeVisibility] = useState(false)
-
-  const [darkMode, setDarkMode] = useState(false)
-
-  const getIDData = async () => {
-    if (document.hidden) return
-    await API.idDataComplete().then((res) => {
-      const hours = new Date(res.lastUpdate).getHours()
-
-      // Prevents showing yesteredays data from API
-      if (hours >= 12) {
-        setConfirmedTodayID(res.todayCases)
-        setDeathsTodayID(res.todayDeaths)
-        setTodayRecoveredID(res.todayRecovered)
-      }
-
-      setTestsID(res.tests)
-      setConfirmedID(res.confirmed)
-      setRecoveredID(res.recovered)
-      setDeathsID(res.deaths)
-      setActiveID(res.active)
-      setConfirmedIDPercent(((res.confirmed / res.tests) * 100).toFixed(2))
-      setDeathsIDPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
-      setRecoveredIDPercent(((res.recovered / res.confirmed) * 100).toFixed(2))
-      setActiveIDPercent(((res.active / res.confirmed) * 100).toFixed(2))
-      setUpdate(res.lastUpdate)
-      setUpdateTimeVisibility(true)
-    })
-  }
-
-  const getIDDataHistorical = async () => {
-    if (document.hidden) return
-    await API.idDataHistorical().then((res) => {
-      let casesLabel = []
-      let casesValue = []
-      let recoveredLabel = []
-      let recoveredValue = []
-      let deathsLabel = []
-      let deathsValue = []
-
-      Object.entries(res.confirmed).forEach((c) => {
-        casesLabel.push(c[0])
-        casesValue.push(c[1])
+  const App = () => {
+    // ID
+    // Actual Value
+    const [testsID, setTestsID] = useState(0)
+    const [confirmedID, setConfirmedID] = useState(0)
+    const [recoveredID, setRecoveredID] = useState(0)
+    const [deathsID, setDeathsID] = useState(0)
+    const [activeID, setActiveID] = useState(0)
+    const [confirmedTodayID, setConfirmedTodayID] = useState(0)
+    const [deathsTodayID, setDeathsTodayID] = useState(0)
+    const [todayRecoveredID, setTodayRecoveredID] = useState(0)
+    // Percentage
+    const [confirmedIDPercent, setConfirmedIDPercent] = useState(0)
+    const [deathsIDPercent, setDeathsIDPercent] = useState(0)
+    const [recoveredIDPercent, setRecoveredIDPercent] = useState(0)
+    const [activeIDPercent, setActiveIDPercent] = useState(0)
+    // Visibility
+    const [
+      confirmedIDPercentVisibility,
+      setConfirmedIDPercentVisibility,
+    ] = useState(false)
+    const [deathsIDPercentVisibility, setDeathsIDPercentVisibility] = useState(
+      false
+    )
+    const [
+      recoveredIDPercentVisibility,
+      setRecoveredIDPercentVisibility,
+    ] = useState(false)
+    const [activeIDPercentVisibility, setActiveIDPercentVisibility] = useState(
+      false
+    )
+    // Historical
+    const [
+      idHistoricalDataConfirmedLabel,
+      setIdHistoricalDataConfirmedLabel,
+    ] = useState([])
+    const [
+      idHistoricalDataConfirmedValue,
+      setIdHistoricalDataConfirmedValue,
+    ] = useState([])
+    const [
+      idHistoricalDataRecoveredLabel,
+      setIdHistoricalDataRecoveredLabel,
+    ] = useState([])
+    const [
+      idHistoricalDataRecoveredValue,
+      setIdHistoricalDataRecoveredValue,
+    ] = useState([])
+    const [
+      idHistoricalDataDeathsLabel,
+      setIdHistoricalDataDeathsLabel,
+    ] = useState([])
+    const [
+      idHistoricalDataDeathsValue,
+      setIdHistoricalDataDeathsValue,
+    ] = useState([])
+  
+    // Global
+    const [testsGlobal, setTestsGlobal] = useState(0)
+    const [confirmedGlobal, setConfirmedGlobal] = useState(0)
+    const [recoveredGlobal, setRecoveredGlobal] = useState(0)
+    const [deathsGlobal, setDeathsGlobal] = useState(0)
+    const [activeGlobal, setActiveGlobal] = useState(0)
+    // Percentage
+    const [confirmedGlobalPercent, setConfirmedGlobalPercent] = useState(0)
+    const [deathsGlobalPercent, setDeathsGlobalPercent] = useState(0)
+    const [recoveredGlobalPercent, setRecoveredGlobalPercent] = useState(0)
+    const [activeGlobalPercent, setActiveGlobalPercent] = useState(0)
+    // Visibility
+    const [confirmedGlobalVisibility, setConfirmedGlobalVisibility] = useState(
+      false
+    )
+    const [deathGlobalVisibility, setDeathGlobalVisibility] = useState(false)
+    const [recoveredGlobalVisibility, setRecoveredGlobalVisibility] = useState(
+      false
+    )
+    const [activeGlobalVisibility, setActiveGlobalVisibility] = useState(false)
+    // Historical
+    const [
+      globalHistoricalDataConfirmedLabel,
+      setGlobalHistoricalDataConfirmedLabel,
+    ] = useState([])
+    const [
+      globalHistoricalDataConfirmedValue,
+      setGlobalHistoricalDataConfirmedValue,
+    ] = useState([])
+    const [
+      globalHistoricalDataRecoveredLabel,
+      setGlobalHistoricalDataRecoveredLabel,
+    ] = useState([])
+    const [
+      globalHistoricalDataRecoveredValue,
+      setGlobalHistoricalDataRecoveredValue,
+    ] = useState([])
+    const [
+      globalHistoricalDataDeathsLabel,
+      setGlobalHistoricalDataDeathsLabel,
+    ] = useState([])
+    const [
+      globalHistoricalDataDeathsValue,
+      setGlobalHistoricalDataDeathsValue,
+    ] = useState([])
+  
+    const [countriesAffected, setCountriesAffected] = useState(0)
+    const [update, setUpdate] = useState('')
+    const [chartID, setChartID] = useState(false)
+    const [chartGlobal, setChartGlobal] = useState(false)
+    const [updateTimeVisibility, setUpdateTimeVisibility] = useState(false)
+  
+    const [darkMode, setDarkMode] = useState(false)
+  
+    const getIDData = async () => {
+      if (document.hidden) return
+      await API.idDataComplete().then((res) => {
+        const hours = new Date(res.lastUpdate).getHours()
+  
+        // Prevents showing yesteredays data from API
+        if (hours >= 12) {
+          setConfirmedTodayID(res.todayCases)
+          setDeathsTodayID(res.todayDeaths)
+          setTodayRecoveredID(res.todayRecovered)
+        }
+  
+        setTestsID(res.tests)
+        setConfirmedID(res.confirmed)
+        setRecoveredID(res.recovered)
+        setDeathsID(res.deaths)
+        setActiveID(res.active)
+        setConfirmedIDPercent(((res.confirmed / res.tests) * 100).toFixed(2))
+        setDeathsIDPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
+        setRecoveredIDPercent(((res.recovered / res.confirmed) * 100).toFixed(2))
+        setActiveIDPercent(((res.active / res.confirmed) * 100).toFixed(2))
+        setUpdate(res.lastUpdate)
+        setUpdateTimeVisibility(true)
       })
-
-      Object.entries(res.recovered).forEach((c) => {
-        recoveredLabel.push(c[0])
-        recoveredValue.push(c[1])
+    }
+  
+    const getIDDataHistorical = async () => {
+      if (document.hidden) return
+      await API.idDataHistorical().then((res) => {
+        let casesLabel = []
+        let casesValue = []
+        let recoveredLabel = []
+        let recoveredValue = []
+        let deathsLabel = []
+        let deathsValue = []
+  
+        Object.entries(res.confirmed).forEach((c) => {
+          casesLabel.push(c[0])
+          casesValue.push(c[1])
+        })
+  
+        Object.entries(res.recovered).forEach((c) => {
+          recoveredLabel.push(c[0])
+          recoveredValue.push(c[1])
+        })
+  
+        Object.entries(res.deaths).forEach((c) => {
+          deathsLabel.push(c[0])
+          deathsValue.push(c[1])
+        })
+  
+        setIdHistoricalDataConfirmedLabel(casesLabel)
+        setIdHistoricalDataConfirmedValue(casesValue)
+  
+        setIdHistoricalDataRecoveredLabel(recoveredLabel)
+        setIdHistoricalDataRecoveredValue(recoveredValue)
+  
+        setIdHistoricalDataDeathsLabel(deathsLabel)
+        setIdHistoricalDataDeathsValue(deathsValue)
       })
-
-      Object.entries(res.deaths).forEach((c) => {
-        deathsLabel.push(c[0])
-        deathsValue.push(c[1])
+    }
+  
+    const getGlobalData = async () => {
+      if (document.hidden) return
+      await API.globalDataComplete().then((res) => {
+        setTestsGlobal(res.tests)
+        setConfirmedGlobal(res.confirmed)
+        setRecoveredGlobal(res.recovered)
+        setDeathsGlobal(res.deaths)
+        setActiveGlobal(res.confirmed - (res.recovered + res.deaths))
+        setConfirmedGlobalPercent(((res.confirmed / res.tests) * 100).toFixed(2))
+        setDeathsGlobalPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
+        setRecoveredGlobalPercent(
+          ((res.recovered / res.confirmed) * 100).toFixed(2)
+        )
+        setActiveGlobalPercent(
+          (100 - ((res.recovered + res.deaths) / res.confirmed) * 100).toFixed(2)
+        )
+        setCountriesAffected(res.affectedCountries)
       })
-
-      setIdHistoricalDataConfirmedLabel(casesLabel)
-      setIdHistoricalDataConfirmedValue(casesValue)
-
-      setIdHistoricalDataRecoveredLabel(recoveredLabel)
-      setIdHistoricalDataRecoveredValue(recoveredValue)
-
-      setIdHistoricalDataDeathsLabel(deathsLabel)
-      setIdHistoricalDataDeathsValue(deathsValue)
-    })
-  }
-
-  const getGlobalData = async () => {
-    if (document.hidden) return
-    await API.globalDataComplete().then((res) => {
-      setTestsGlobal(res.tests)
-      setConfirmedGlobal(res.confirmed)
-      setRecoveredGlobal(res.recovered)
-      setDeathsGlobal(res.deaths)
-      setActiveGlobal(res.confirmed - (res.recovered + res.deaths))
-      setConfirmedGlobalPercent(((res.confirmed / res.tests) * 100).toFixed(2))
-      setDeathsGlobalPercent(((res.deaths / res.confirmed) * 100).toFixed(2))
-      setRecoveredGlobalPercent(
-        ((res.recovered / res.confirmed) * 100).toFixed(2)
-      )
-      setActiveGlobalPercent(
-        (100 - ((res.recovered + res.deaths) / res.confirmed) * 100).toFixed(2)
-      )
-      setCountriesAffected(res.affectedCountries)
-    })
-  }
-
-  const getGlobalDataHistorical = async () => {
-    if (document.hidden) return
-    await API.globalDataHistorical().then((res) => {
-      let casesLabel = []
-      let casesValue = []
-      let recoveredLabel = []
-      let recoveredValue = []
-      let deathsLabel = []
-      let deathsValue = []
-
-      Object.entries(res.confirmed).forEach((c) => {
-        casesLabel.push(c[0])
-        casesValue.push(c[1])
+    }
+  
+    const getGlobalDataHistorical = async () => {
+      if (document.hidden) return
+      await API.globalDataHistorical().then((res) => {
+        let casesLabel = []
+        let casesValue = []
+        let recoveredLabel = []
+        let recoveredValue = []
+        let deathsLabel = []
+        let deathsValue = []
+  
+        Object.entries(res.confirmed).forEach((c) => {
+          casesLabel.push(c[0])
+          casesValue.push(c[1])
+        })
+  
+        Object.entries(res.recovered).forEach((c) => {
+          recoveredLabel.push(c[0])
+          recoveredValue.push(c[1])
+        })
+  
+        Object.entries(res.deaths).forEach((c) => {
+          deathsLabel.push(c[0])
+          deathsValue.push(c[1])
+        })
+  
+        setGlobalHistoricalDataConfirmedLabel(casesLabel)
+        setGlobalHistoricalDataConfirmedValue(casesValue)
+  
+        setGlobalHistoricalDataRecoveredLabel(recoveredLabel)
+        setGlobalHistoricalDataRecoveredValue(recoveredValue)
+  
+        setGlobalHistoricalDataDeathsLabel(deathsLabel)
+        setGlobalHistoricalDataDeathsValue(deathsValue)
       })
-
-      Object.entries(res.recovered).forEach((c) => {
-        recoveredLabel.push(c[0])
-        recoveredValue.push(c[1])
-      })
-
-      Object.entries(res.deaths).forEach((c) => {
-        deathsLabel.push(c[0])
-        deathsValue.push(c[1])
-      })
-
-      setGlobalHistoricalDataConfirmedLabel(casesLabel)
-      setGlobalHistoricalDataConfirmedValue(casesValue)
-
-      setGlobalHistoricalDataRecoveredLabel(recoveredLabel)
-      setGlobalHistoricalDataRecoveredValue(recoveredValue)
-
-      setGlobalHistoricalDataDeathsLabel(deathsLabel)
-      setGlobalHistoricalDataDeathsValue(deathsValue)
-    })
-  }
-
-  useEffect(() => {
-    const localHours = new Date().getHours()
-    setDarkMode(!(localHours >= 6 && localHours <= 17))
-
-    getIDData()
-    setInterval(getIDData, 300000)
-    getIDDataHistorical()
-    getGlobalData()
-    setInterval(getGlobalData, 300000)
-    getGlobalDataHistorical()
-  }, [])
-
-  return (
-    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <Bar />
-
-      <Theme darkMode={darkMode} setDarkMode={setDarkMode} />
-
-      <div className="share fixed right-0">
-        <a href={URL_FB_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
-          <img src={FB} alt="Bagikan ke Facebook" width="30" />
-        </a>
-        <a href={URL_TW_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
-          <img src={TW} alt="Bagikan ke Twitter" width="30" />
-        </a>
-      </div>
-
-      <h2 className="text-5xl p-5 font-hairline noselect ind" translate="no">
-        Indonesia{' '}
-        <img src={BENDERA} width="70" className="inline mb-1" alt="" />
-      </h2>
-      <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 clearfix text-left noselect">
-        <span className="md:float-left text-left">
-          Hari ini
-          <sup className="text-xs text-gray-500 ml-2">
-            {update && new Date(update).toLocaleDateString()}
-          </sup>
-        </span>
-        <p
-          className={`md:float-right text-sm mt-2 text-gray-500 ${
-            !updateTimeVisibility && 'hidden'
-          }`}
-        >
-          <img
-            src={TIME}
-            width="16"
-            alt="Clock"
-            className="inline clock mr-1"
-          />{' '}
+    }
+  
+    useEffect(() => {
+      const localHours = new Date().getHours()
+      setDarkMode(!(localHours >= 5 && localHours <= 17))
+  
+      getIDData()
+      setInterval(getIDData, 300000)
+      getIDDataHistorical()
+      getGlobalData()
+      setInterval(getGlobalData, 300000)
+      getGlobalDataHistorical()
+    }, [])
+  
+    return (
+      <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+        <Bar />
+  
+        <Theme darkMode={darkMode} setDarkMode={setDarkMode} />
+  
+        <div className="share fixed right-0">
+          <a href={URL_FB_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
+            <img src={FB} alt="Bagikan ke Facebook" width="30" />
+          </a>
+          <a href={URL_TW_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
+            <img src={TW} alt="Bagikan ke Twitter" width="30" />
+          </a>
+        </div>
+  
+        <h2 className="text-5xl p-5 font-hairline noselect ind">
+          Indonesia{' '}
+          <img src={BENDERA} width="70" className="inline mb-1" alt="" />
+        </h2>
+        <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 clearfix text-left noselect">
+          <span className="md:float-left text-left">
+            Hari ini
+            <sup className="text-xs text-gray-500 ml-2">
+              {update && new Date(update).toLocaleDateString()}
+            </sup>
+          </span>
+          <p
+            className={`md:float-right text-sm mt-2 text-gray-500 ${
+              !updateTimeVisibility && 'hidden'
+            }`}
+          >
+            <img
+              src={TIME}
+              width="16"
+              alt="Clock"
+              className="inline clock mr-1"
+            />{' '}
           Diperbarui <ReactTimeAgo date={update} live={false} formatter={formatter} />{' '}
         </p>
       </h3>

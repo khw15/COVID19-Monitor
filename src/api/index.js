@@ -1,15 +1,16 @@
-const NinjaUrl = "https://disease.sh/v3/covid-19/";
+const MathdroidUrl = "https://covid19.mathdro.id/api/";
+const NinjaUrl = "https://corona.lmao.ninja/v2/";
 
 export const idData = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}countries/Indonesia/`
+        `${MathdroidUrl}countries/id/`
       ).then((res) => res.json())
       return {
-        confirmed: data.todayCases,
-        recovered: data.todayRecovered,
-        deaths: data.todayDeaths,
-        lastUpdate: data.updated,
+        confirmed: data.confirmed.value,
+        recovered: data.recovered.value,
+        deaths: data.deaths.value,
+        lastUpdate: data.lastUpdate,
       }
     } catch (e) {
       console.log(e)
@@ -18,14 +19,14 @@ export const idData = async () => {
 
   export const globalData = async () => {
     try {
-      const data = await fetch(`${NinjaUrl}all`).then((res) =>
+      const data = await fetch(`${MathdroidUrl}`).then((res) =>
         res.json()
       )
       return {
-        confirmed: data.todayCases,
-        recovered: data.todayRecovered,
-        deaths: data.todayDeaths,
-        lastUpdate: data.updated,
+        confirmed: data.confirmed.value,
+        recovered: data.recovered.value,
+        deaths: data.deaths.value,
+        lastUpdate: data.lastUpdate,
       }
     } catch (e) {
       console.log(e)
@@ -35,7 +36,7 @@ export const idData = async () => {
   export const idDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}countries/Indonesia`
+        `${NinjaUrl}countries/id`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
@@ -56,7 +57,7 @@ export const idData = async () => {
   export const idDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/Indonesia?lastdays=all`
+        `${NinjaUrl}historical/id?lastdays=all`
       ).then((res) => res.json())
       return {
         confirmed: data.timeline.cases,
@@ -71,7 +72,7 @@ export const idData = async () => {
   export const globalDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}all`
+        `${NinjaUrl}all?lastdays=all`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
@@ -92,7 +93,7 @@ export const idData = async () => {
   export const globalDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/all?lastdays=all`
+        `${NinjaUrl}historical/all`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
