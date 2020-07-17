@@ -67,6 +67,17 @@ const Footer = () => {
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+          Versi{' '}
+          <a 
+            href="https://maps.covid19.i315.my.id/" 
+            className="text-blue-500">
+            lainnya
+          </a>{' '}
+          dengan peta sebaran per negara
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
               SITUS INI TIDAK BERAFILIASI DENGAN PEMERINTAH
