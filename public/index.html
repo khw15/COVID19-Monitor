@@ -3,8 +3,15 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="%PUBLIC_URL%/assets/script/gtag.js"></script>
-  <script src="%PUBLIC_URL%/assets/script/gtag.dataLayer.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171777694-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171777694-1');
+  </script>
+
 
   <title>COVID-19 ID Stats &#8211; Statistik COVID-19 di Indonesia dan Dunia</title>
 
@@ -35,7 +42,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Statistik COVID-19 Indonesia dan Dunia">
   <meta name="twitter:description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia.">
-  <meta name="twitter:image" content="http://covid19.i315.my.id/assets/Logo/logo1080.jpg">
+  <meta name="twitter:image" content="https://covid19.i315.my.id/assets/Logo/logo1080.jpg">
 
   <!-- Internal Links Preload -->
   <link rel="preload" as="font" type="font/woff" 
@@ -74,23 +81,26 @@
   crossorigin="crossorigin">
 
   <!-- External Links Preload -->
-  <link rel="preload" href="https://covid19.i315.my.id/">
-  <link rel="preload" href="https://disease.sh/v3/covid-19/">
-  <link rel="preload" href="https://www.google-analytics.com/">
-  <link rel="preload" href="https://storage.googleapis.com/">
-  <link rel="preload" href="https://platform.twitter.com/">
-  <link rel="preload" href="https://twimg.com/">
-  <link rel="preload" href="https://abs.twimg.com/">
-  <link rel="preload" href="https://pbs.twimg.com/">
-  <link rel="preload" href="https://ton.twimg.com/">
-  <link rel="preload" href="https://cdn.syndication.twimg.com/">
-  <link rel="preload" href="https://syndication.twitter.com/">
-  <link rel="preload" href="https://twitter.com/">
+  <link rel="preload" href="https://covid19.i315.my.id/" />
+  <link rel="preload" href="https://disease.sh/v3/covid-19/" />
+  <link rel="preload" hreg="https://corona.lmao.ninja/v2/" />
+  <link rel="preload" href="https://www.google-analytics.com/" />
+  <link rel="preload" href="https://www.googletagmanager.com/" />
+  <link rel="preload" href="https://storage.googleapis.com/" />
+  <link rel="preload" href="https://platform.twitter.com/" />
+  <link rel="preload" href="https://twimg.com/" />
+  <link rel="preload" href="https://abs.twimg.com/" />
+  <link rel="preload" href="https://pbs.twimg.com/" />
+  <link rel="preload" href="https://ton.twimg.com/" />
+  <link rel="preload" href="https://cdn.syndication.twimg.com/" />
+  <link rel="preload" href="https://syndication.twitter.com/" />
+  <link rel="preload" href="https://twitter.com/" />
 
   <!-- Site data-->
   <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico">
   <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json">
   <link rel="canonical" href="https://i315.my.id/">
+  <link rel="canonical" href="https://maps.covid19.i315.my.id/">
 
   <!-- Apple Splash Screen-->
   <meta name="apple-mobile-web-app-capable" content="yes">
