@@ -70,7 +70,7 @@ const Footer = () => {
         <span className="p-1">
           Versi{' '}
           <a 
-            href="https://maps.covid19.i315.my.id/" 
+            href="https://maps.i315.my.id/" 
             className="text-blue-500">
             lainnya
           </a>{' '}
