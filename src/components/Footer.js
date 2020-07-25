@@ -78,6 +78,12 @@ const Footer = () => {
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+          <i>"Vaksin COVID-19 paling ampuh untuk saat ini adalah kesadaran diri. 
+          Aturan sudah dibuat. Siapa yang taat, dia yang selamat!"</i>
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
               SITUS INI TIDAK BERAFILIASI DENGAN PEMERINTAH
