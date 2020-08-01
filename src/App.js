@@ -346,7 +346,8 @@ const URL_FB_SHARE =
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
         * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kementerian Kesehatan
-        Republik Indonesia pada hari ini atau keterlambatan pembaruan data
+        Republik Indonesia pada hari ini atau keterlambatan pembaruan data atau tidak 
+        adanya koneksi internet
       </p>
       <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 text-left noselect">
         Total
