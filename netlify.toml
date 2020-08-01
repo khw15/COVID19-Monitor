@@ -2,9 +2,6 @@
 package = "netlify-plugin-image-optim"
 
 [[plugins]]
-package = "netlify-build-plugin-pushover"
-
-[[plugins]]
 package = "netlify-plugin-hashfiles"
 
   [plugins.inputs]
