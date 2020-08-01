@@ -1,4 +1,7 @@
 [[plugins]]
+package = "netlify-plugin-image-optim"
+
+[[plugins]]
 package = "netlify-plugin-hashfiles"
 
   [plugins.inputs]
@@ -9,6 +12,3 @@ package = "netlify-plugin-hashfiles"
 
   # Directory where content-addressable files are moved and immutable cache-headers are set
   staticDir = "/static/"
-
-[[plugins]]
-package = "netlify-plugin-image-optim"
