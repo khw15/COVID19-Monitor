@@ -99,7 +99,6 @@
   <!-- Site data-->
   <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico" />
   <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json" />
-  <link rel="canonical" href="https://i315.my.id/" />
   <link rel="canonical" href="https://maps.i315.my.id/" />
 
   <!-- Apple Splash Screen-->
@@ -143,10 +142,10 @@
           url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
           url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
     }
-
     body {
       font-family: "Quicksand", "sans-serif";
       font-weight: 500;
+      color: #333;
     }
   </style>
 </head>
@@ -156,14 +155,20 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD7G95W"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
-  <noscript>
-    Oops, nampaknya JavaScript dinonaktifkan. Anda harus mengaktifkan JavaScript 
-    agar aplikasi ini berjalan optimal. 😄
+  <noscript style="display: block; text-align: left; max-width: 650px; margin: 0 auto; padding: 10%;">
+    <article>
+      <h1 style="font-size: 50px; margin: 0;">
+        Aplikasi tidak berjalan optimal.
+      </h1>
+      <p>
+        Oops, nampaknya JavaScript dinonaktifkan. Anda harus mengaktifkan JavaScript agar aplikasi ini berjalan optimal. 😄
+      </p>
+      <p>
+        &mdash; Webmaster
+      </p>
+    </article>
   </noscript>
-  <div id="root">
-  </div>
-  
+  <div id="root"></div>
   <script src="%PUBLIC_URL%/assets/script/SWLoader.js"></script>
 </body>
 </html>
