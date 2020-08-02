@@ -2,6 +2,9 @@
 package = "netlify-plugin-image-optim"
 
 [[plugins]]
+package = "netlify-plugin-is-website-vulnerable"
+
+[[plugins]]
 package = "netlify-plugin-hashfiles"
 
   [plugins.inputs]
