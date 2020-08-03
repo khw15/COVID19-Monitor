@@ -68,19 +68,10 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Versi{' '}
-          <a 
-            href="https://maps.i315.my.id/" 
-            className="text-blue-500">
-            lainnya
-          </a>{' '}
-          dengan peta sebaran per negara
-        </span>
-      </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <span className="p-1">
-          <i>"Vaksin COVID-19 paling ampuh untuk saat ini adalah kesadaran diri. 
-          Aturan sudah dibuat. Siapa yang taat, dia yang selamat!"</i>
+          <a href="//www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262" title="DMCA.com Protection Status" class="dmca-badge">
+            <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262"  alt="DMCA.com Protection Status" />
+          </a>
+          <script src="/assets/script/DMCABadgeHelper.min.js"></script>
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
