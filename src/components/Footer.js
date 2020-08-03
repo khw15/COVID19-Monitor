@@ -56,7 +56,7 @@ const Footer = () => {
         <span className="p-1">
           Dipersembahkan oleh{' '}
           <a 
-          href="mailto:faisal-a-f-rahman@i315.my.id?cc=faisal-a-f-rahman@alfaisal.my.id" 
+          href="mailto:faisal-a-f-rahman@i315.my.id" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
