@@ -69,7 +69,7 @@ const Footer = () => {
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
           <a href="//www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262" title="DMCA.com Protection Status" class="dmca-badge" target="_blank" rel="noopener noreferrer">
-            <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262"  alt="DMCA.com Protection Status" />
+            <img src ="https://www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262&refurl=https://covid19.alfaisal.my.id/"  alt="DMCA.com Protection Status" />
           </a>
           <script src="/assets/script/DMCABadgeHelper.min.js"></script>
         </span>
