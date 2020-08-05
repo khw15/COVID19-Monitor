@@ -29,19 +29,6 @@
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "url": "https://covid19.alfaisal.my.id/",
     "lang": "Indonesian",
-    "screenshots": [
-        {
-            "src": "[Embedded]",
-            "sizes": "1280x800",
-            "type": "image/png"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "750x1334",
-            "type": "image/png"
-        }
-    ],
     "orientation": "portrait"
 }
