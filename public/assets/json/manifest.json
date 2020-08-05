@@ -4,23 +4,23 @@
     "description": "Informasi statistik COVID-19 di Indonesia dan di dunia.",
     "icons": [
         {
-            "src": "/assets/json/assets/Logo/favicon.ico",
+            "src": "/assets/Logo/favicon.ico",
             "sizes": "48x48",
             "type": "image/x-icon"
         },
         {
-            "src": "/assets/json/assets/Logo/maskable_icon.png",
+            "src": "/assets/Logo/maskable_icon.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "maskable any"
         },
         {
-            "src": "/assets/json/assets/Logo/logo192.png",
+            "src": "/assets/Logo/logo192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/assets/json/assets/Logo/logo512.png",
+            "src": "/assets/Logo/logo512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
