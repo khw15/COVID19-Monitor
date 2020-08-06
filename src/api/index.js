@@ -1,16 +1,16 @@
-const MathdroidUrl = "https://covid19.mathdro.id/api/";
-const NinjaUrl = "https://corona.lmao.ninja/v2/";
+// const MathdroidUrl = "https://covid19.mathdro.id/api/";
+const NinjaUrl = "https://disease.sh/v3/covid-19/";
 
 export const idData = async () => {
     try {
       const data = await fetch(
-        `${MathdroidUrl}countries/id/`
+        `${NinjaUrl}countries/id/`
       ).then((res) => res.json())
       return {
-        confirmed: data.confirmed.value,
-        recovered: data.recovered.value,
-        deaths: data.deaths.value,
-        lastUpdate: data.lastUpdate,
+        confirmed: data.todayCases,
+        recovered: data.todayRecovered,
+        deaths: data.todayDeaths,
+        lastUpdate: data.updated,
       }
     } catch (e) {
       console.log(e)
@@ -19,14 +19,14 @@ export const idData = async () => {
 
   export const globalData = async () => {
     try {
-      const data = await fetch(`${MathdroidUrl}`).then((res) =>
+      const data = await fetch(`${NinjaUrl}all`).then((res) =>
         res.json()
       )
       return {
-        confirmed: data.confirmed.value,
-        recovered: data.recovered.value,
-        deaths: data.deaths.value,
-        lastUpdate: data.lastUpdate,
+        confirmed: data.todayCases,
+        recovered: data.todayRecovered,
+        deaths: data.todayDeaths,
+        lastUpdate: data.updated,
       }
     } catch (e) {
       console.log(e)
@@ -72,7 +72,7 @@ export const idData = async () => {
   export const globalDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}all?lastdays=all`
+        `${NinjaUrl}all`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
@@ -93,7 +93,7 @@ export const idData = async () => {
   export const globalDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/all`
+        `${NinjaUrl}historical/all?lastdays=all`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,

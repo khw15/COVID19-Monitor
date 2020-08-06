@@ -60,7 +60,7 @@ const Footer = () => {
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="i315"
+          title="Kirim surel ke webmaster"
           >
             i315
           </a>{' '}
