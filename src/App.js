@@ -559,7 +559,7 @@ const App = () => {
       <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
         <Tips
           image={TANGAN}
-          title="Cuci tangan Anda sesering mungkin"
+          title="Budayakan cuci tangan"
           description="Seringlah mencuci tangan Anda dengan air bersih mengalir dan sabun, atau 
           cairan antiseptik berbahan dasar alkohol. Mengapa? Mencuci tangan dengan air bersih 
           yang mengalir dan sabun, atau cairan antiseptik berbahan dasar alkohol dapat membunuh 
@@ -567,7 +567,7 @@ const App = () => {
         />
         <Tips
           image={SOCIAL_DISTANCING}
-          title="Jaga jarak setidaknya 1 meter dengan orang lain"
+          title="Lakukan pembatasan sosial"
           description="Ketika seseorang 
           batuk, bersin, atau bicara, orang tersebut mengeluarkan percikan dari hidung atau mulutnya 
           dan percikan ini dapat membawa virus. Jika Anda terlalu dekat, Anda dapat menghirup percikan 
@@ -582,7 +582,7 @@ const App = () => {
         />
         <Tips
           image={DOKTER}
-          title="Hindari menyentuh wajah, hidung, mulut, atau mata"
+          title="Hindari menyentuh area wajah"
           description="Tangan menyentuh berbagai 
           permukaan benda dan virus penyakit ini dapat tertempel di tangan. Tangan yang terkontaminasi 
           dapat membawa virus ini ke mata, hidung, atau mulut, yang dapat menjadi titik masuk virus ini 
@@ -593,25 +593,21 @@ const App = () => {
           title="Terapkan etika batuk dan bersin"
           description="Pastikan Anda dan orang-orang di sekitar Anda menjalankan etika batuk dan bersin 
           dengan cara menutup mulut dan hidung dengan siku terlipat atau tisu saat batuk atau bersin, segera 
-          buang tisu bekas tersebut. Mengapa? Percikan dapat menyebarkan virus. Dengan mengikuti etika batuk 
-          dan bersin, Anda melindungi orang-orang di sekitar dari virus-virus seperti batuk pilek, flu, dan COVID-19."
+          buang tisu bekas tersebut. Dengan mengikuti etika batuk dan bersin, Anda melindungi orang-orang 
+          di sekitar dari virus-virus seperti batuk pilek, flu, dan COVID-19."
         />
          <Tips
           image={MASKER}
           title="Kenakan masker"
-          description="Pastikan Anda dan orang-orang di sekitar Anda mengenakan masker. Mengapa? Percikan dapat 
-          menyebarkan virus saat Anda atau orang-orang di sekitar Anda batuk atau bersin. Pakai masker kain 
-          yang direkomendasikan oleh Kementerian Kesehatan, 
-          karena masker medis hanya untuk tenaga medis yang melakukan kontak langsung dengan pasien dalam pengawasan atau 
-          pasien positif COVID-19."
+          description="Pastikan Anda dan orang-orang di sekitar Anda mengenakan masker. Pakai masker kain 
+          yang direkomendasikan oleh Kementerian Kesehatan, karena masker medis hanya untuk tenaga medis 
+          yang melakukan kontak langsung dengan pasien dalam pengawasan atau pasien positif COVID-19."
         />
         <Tips
           image={KESEHATAN}
           title="Jika Anda kurang sehat, segeralah cari pertolongan medis"
           description="Jika Anda demam, batuk, dan kesulitan bernapas, segeralah cari pertolongan medis dan 
-          tetap memberitahukan kondisi Anda terlebih dahulu. Ikuti arahan dinas kesehatan setempat Anda.
-          Mengapa? Kementerian kesehatan dan dinas kesehatan daerah memiliki informasi terbaru tentang 
-          situasi di wilayah Anda. Dengan memberitahukan kondisi Anda terlebih dahulu, petugas kesehatan 
+          tetap memberitahukan kondisi Anda terlebih dahulu. Dengan memberitahukan kondisi Anda terlebih dahulu, petugas kesehatan 
           yang akan merawat Anda dapat segera mengarahkan Anda ke fasilitas pelayanan kesehatan yang tepat. 
           Langkah ini juga melindungi Anda dan membantu mencegah penyebaran virus dan infeksi lainnya."
         />
@@ -619,7 +615,7 @@ const App = () => {
           image={NEWS}
           title="Tetap mengikuti berita dari sumber terpercaya"
           description="Tetap ikuti informasi terbaru dari sumber terpercaya, seperti WHO, dinas kesehatan daerah, 
-          dan kementerian kesehatan. Mengapa? Dinas kesehatan daerah dan kementerian kesehatan adalah sumber 
+          dan kementerian kesehatan. Dinas kesehatan daerah dan kementerian kesehatan adalah sumber 
           terpercaya dalam memberikan arahan kepada masyarakat di wilayahnya tentang apa saja yang harus 
           dilakukan untuk melindungi diri."
           last
