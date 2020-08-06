@@ -674,74 +674,15 @@ const App = () => {
         target="_blank"
         rel="noopener noreferrer"
         >
-          {' '}
+        {' '}
         situs web CDC
-        </a>{' '}dan{' '}
+        </a>
+        {' '}dan{' '}
         <a href="https://fk.unair.ac.id/mengenal-apa-itu-virus-corona/"
         target="_blank"
         rel="noopener noreferrer"
         >
         F. Kedokteran Unair
-        </a>
-      </p>
-
-      <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
-        Apa yang Dimaksud Dengan COVID-19?
-      </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
-        <p>
-          Virus korona adalah sebutan untuk jenis virus yang dapat menyebabkan penyakit pada 
-          hewan dan manusia. Disebut korona karena bentuknya yang seperti mahkota 
-          (korona ~ <i>crown</i> = mahkota dalam bahasa Latin). 
-          <br /><br />
-          Beberapa contoh penyakit pada manusia yang disebabkan oleh virus korona antara 
-          lain MERS (Sindrom Pernafasan Timur Tengah) dan SARS (Sindrom Pernafasan Akut 
-          Parah). 
-          <br /><br />
-          Virus korona terbaru yang ditemukan yang ditemukan di Wuhan, Tiongkok, pada bulan 
-          Desember 2019 diberi nama <i>SARS Coronavirus</i> 2 (SARS-CoV-2) dan menyebabkan penyakit{' '} 
-          <i>Coronavirus Disease</i> 2019 (COVID-19).
-        </p>
-      </div>
-
-      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
-        Sumber{' '}
-        <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          {' '}
-        situs web WHO
-        </a>
-      </p>
-
-      <h2 className="md:w-2/3 py-4 mt-4 mx-auto text-2xl noselect">
-        Bagaimana COVID-19 menular?
-      </h2>
-      <div className="md:w-2/3 text-left p-6 py-8 mx-4 md:mx-auto shadow bg-white rounded-lg">
-        <p>
-          Penularan terjadi melalui <i><b>droplet</b></i> (butir-butir tetesan cairan) dari hidung atau mulut 
-          yang menyebar saat pembawa virus COVID-19 batuk, bersin atau meler. Tetesan cairan 
-          tersebut akan menempel pada benda atau permukaan di sekitarnya. Dan kemudian masuk ke 
-          mulut, hidung atau mata. Atau menyentuh permukaan bekas terkena butir cairannya dengan 
-          tangan lalu tangan mengusap mulut, hidung atau mata. Inilah alasan pentingnya sering-
-          sering cuci tangan dan jangan menyentuh muka dengan tangan.
-          <br /><br />
-          Orang sehat dapat tertular saat tangan mereka menyentuh permukaan yang terkena tetesan 
-          tersebut dan kemudian tanpa sadar menyentuh mata, mulut, ataupun hidung (selaput lendir). 
-          Virus juga bisa masuk saat orang sehat secara tidak sengaja menghirup tetesan cairan saat 
-          si pembawa virus batuk atau bersin.
-        </p>
-      </div>
-
-      <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
-        Sumber{' '}
-        <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          {' '}
-        situs web WHO
         </a>
       </p>
 
@@ -855,7 +796,7 @@ const App = () => {
           😷
         </span>
         <br />
-        Sehat Negeriku!{' '}
+        Indonesia Bisa!{' '}
         <span role="img" aria-label="strong">
           💪
         </span>
