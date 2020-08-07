@@ -36,9 +36,9 @@ import API from './api'
 const formatter = buildFormatter(indonesiaString)
 
 const URL_TW_SHARE =
-'https://twitter.com/intent/tweet?url=https%3A%2F%2Fcovid19.i315.my.id%2F&text=Tetap%20update%20dengan%20statistik%20COVID-19%20terbaru%20dari%20jumlah%20pengetesan%20yang%20dilakukan%2C%20kasus%20positif%20dan%20aktif%2C%20angka%20kesembuhan%20dan%20kematian%20di%20Indonesia%20atau%20di%20Dunia.%20&hashtags=COVID-19%2CCOVID19%2CCORONA'
+'https://twitter.com/intent/tweet?url=https%3A%2F%2Fcovid19.alfaisal.my.id%2F&text=Tetap%20update%20dengan%20statistik%20COVID-19%20terbaru%20dari%20jumlah%20pengetesan%20yang%20dilakukan%2C%20kasus%20positif%20dan%20aktif%2C%20angka%20kesembuhan%20dan%20kematian%20di%20Indonesia%20atau%20di%20Dunia.%20&hashtags=COVID-19%2CCOVID19%2CCORONA'
 const URL_FB_SHARE =
-  'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcovid19.i315.my.id/'
+  'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcovid19.alfaisal.my.id/'
 
 const App = () => {
   // ID
@@ -156,7 +156,7 @@ const App = () => {
     await API.idDataComplete().then((res) => {
       const hours = new Date(res.lastUpdate).getHours()
 
-      // Prevents showing yesteredays data from API
+      // Prevents showing yesterdays data from API
       if (hours >= 12) {
         setConfirmedTodayID(res.todayCases)
         setDeathsTodayID(res.todayDeaths)
@@ -289,10 +289,10 @@ const App = () => {
 
       <div className="share fixed right-0">
         <a href={URL_FB_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
-          <img src={FB} alt="Bagikan ke Facebook" width="30" />
+          <img src={FB} alt="Bagikan ke Facebook" title="Bagikan ke Facebook" width="30" />
         </a>
         <a href={URL_TW_SHARE} rel="noopener noreferrer" className="block pb-2 px-4" target="_blank">
-          <img src={TW} alt="Bagikan ke Twitter" width="30" />
+          <img src={TW} alt="Bagikan ke Twitter" title="Bagikan ke Twitter" width="30" />
         </a>
       </div>
 
@@ -346,7 +346,7 @@ const App = () => {
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
         * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kementerian Kesehatan
-        RI pada hari ini atau keterlambatan pembaruan data
+        RI pada hari ini atau keterlambatan pembaruan data atau tidak adanya koneksi internet
       </p>
       <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 text-left noselect">
         Total
@@ -373,7 +373,7 @@ const App = () => {
           }
           percentValue={confirmedIDPercent}
           delay={100}
-          help={`Dari ${testsID.toLocaleString()} tes yang dilakukan ${confirmedIDPercent}% positif`}
+          help={`Dari ${testsID.toLocaleString()} tes yang dilakukan, ${confirmedIDPercent}% positif`}
           helpBg="bg-white"
           helpBorder="border-gray-600"
         />
@@ -389,7 +389,7 @@ const App = () => {
           }
           percentValue={recoveredIDPercent}
           delay={150}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${recoveredIDPercent}% sembuh`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif, ${recoveredIDPercent}% sembuh`}
           helpBg="bg-green-100"
           helpBorder="border-green-500"
         />
@@ -405,7 +405,7 @@ const App = () => {
           }
           percentValue={activeIDPercent}
           delay={250}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${activeIDPercent}% dalam perawatan`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif, ${activeIDPercent}% masih dalam perawatan`}
           helpBg="bg-yellow-100"
           helpBorder="border-yellow-500"
         />
@@ -421,7 +421,7 @@ const App = () => {
           }
           percentValue={deathsIDPercent}
           delay={200}
-          help={`Dari ${confirmedID.toLocaleString()} kasus positif ${deathsIDPercent}% meninggal dunia`}
+          help={`Dari ${confirmedID.toLocaleString()} kasus positif, ${deathsIDPercent}% meninggal dunia`}
           helpBg="bg-red-100"
           helpBorder="border-red-500"
         />
@@ -468,7 +468,7 @@ const App = () => {
           }
           percentValue={confirmedGlobalPercent}
           delay={100}
-          help={`Dari ${testsGlobal.toLocaleString()} tes yang dilakukan ${confirmedGlobalPercent}% positif`}
+          help={`Dari ${testsGlobal.toLocaleString()} tes yang dilakukan, ${confirmedGlobalPercent}% positif`}
         />
 
         <Box
@@ -482,7 +482,7 @@ const App = () => {
           }
           percentValue={activeGlobalPercent}
           delay={250}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${activeGlobalPercent}% dalam perawatan`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif, ${activeGlobalPercent}% masih dalam perawatan`}
           helpBg="bg-yellow-100"
           helpBorder="border-yellow-500"
         />
@@ -498,7 +498,7 @@ const App = () => {
           }
           percentValue={recoveredGlobalPercent}
           delay={150}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${recoveredGlobalPercent}% sembuh`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif, ${recoveredGlobalPercent}% sembuh`}
           helpBg="bg-green-100"
           helpBorder="border-green-500"
         />
@@ -514,7 +514,7 @@ const App = () => {
           }
           percentValue={deathsGlobalPercent}
           delay={200}
-          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif ${deathsGlobalPercent}% meninggal dunia`}
+          help={`Dari ${confirmedGlobal.toLocaleString()} kasus positif, ${deathsGlobalPercent}% meninggal dunia`}
           helpBg="bg-red-100"
           helpBorder="border-red-500"
         />
