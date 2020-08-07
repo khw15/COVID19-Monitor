@@ -217,6 +217,12 @@
     </div>
   </noscript>
   <div id="root"></div>
-  <script src="%PUBLIC_URL%/assets/script/SWLoader.js" importance="high"></script>
+  <script importance="high">
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+    }
+  </script>
 </body>
 </html>
