@@ -36,9 +36,9 @@ import API from './api'
 const formatter = buildFormatter(indonesiaString)
 
 const URL_TW_SHARE =
-  'https://twitter.com/intent/tweet?url=https%3A%2F%2Fcovid19.alfaisal.my.id&text=Tetap%20update%20dengan%20statistik%20COVID-19%20terbaru%20dari%20jumlah%20pengetesan%20yang%20dilakukan%2C%20kasus%20positif%20dan%20aktif%2C%20angka%20kesembuhan%20dan%20kematian%20di%20Indonesia%20atau%20di%20Dunia.&hashtags=COVID19%2CCORONA'
+  'https://twitter.com/intent/tweet?url=https%3A%2F%2Fs.id%2FCORONA19&text=Tetap%20update%20dengan%20statistik%20COVID-19%20terbaru%20dari%20jumlah%20pengetesan%20yang%20dilakukan%2C%20kasus%20positif%20dan%20aktif%2C%20angka%20kesembuhan%20dan%20kematian%20di%20Indonesia%20atau%20di%20Dunia.&hashtags=COVID19%2CCORONA'
 const URL_FB_SHARE =
-  'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcovid19.alfaisal.my.id/'
+  'https://www.facebook.com/sharer/sharer.php?u=https://s.id/CORONA19'
 
   const App = () => {
     // ID
