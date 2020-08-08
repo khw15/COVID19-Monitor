@@ -56,45 +56,42 @@
   <meta name="twitter:image" content="https://covid19.alfaisal.my.id//assets/Logo/logo1080.jpg" />
 
   <!-- Internal Links Preload -->
-  <link rel="preload" as="font" type="font/woff" 
+  <link rel="preconnect" as="font" type="font/woff" 
   href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff"
   crossorigin="crossorigin">
 
-  <link rel="preload" as="font" type="font/woff2" 
+  <link rel="preconnect" as="font" type="font/woff2" 
   href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff2"
   crossorigin="crossorigin">
 
-  <link rel="preload" as="font" type="font/truetype" 
+  <link rel="preconnect" as="font" type="font/truetype" 
   href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf"
   crossorigin="crossorigin">
 
-  <link rel="preload" as="font" type="xml/svg" 
+  <link rel="preconnect" as="font" type="xml/svg" 
   href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg"
   crossorigin="crossorigin">
   
-  <link rel="preload" href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot"
+  <link rel="preconnect" href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot"
   crossorigin="crossorigin">
 
-  <link rel="preload" as="script" type="text/javascript" 
-  href="%PUBLIC_URL%/assets/script/SWLoader.js"
-  crossorigin="crossorigin">
-
-  <link rel="preload" as="script" type="text/javascript" 
+  <link rel="preconnect" as="script" type="text/javascript" 
   href="%PUBLIC_URL%/assets/script/gtag.js"
   crossorigin="crossorigin">
 
-  <link rel="preload" as="image" type="image/png" 
+  <link rel="preconnect" as="image" type="image/png" 
   href="%PUBLIC_URL%/assets/Logo/maskable_icon.png"
   crossorigin="crossorigin">
 
   <!-- External Links Preload -->
-  <link rel="preload" href="https://covid19.alfaisal.my.id/" />
-  <link rel="preload" href="https://disease.sh/v3/covid-19/" />
-  <link rel="preload" href="https://corona.lmao.ninja/v2/" />
-  <link rel="preload" href="https://www.google-analytics.com/" />
-  <link rel="preload" href="https://www.googletagmanager.com/" />
-  <link rel="preload" href="https://storage.googleapis.com/" />
-  <link rel="preload" href="https://platform.twitter.com/" />
+  <link rel="preconnect" href="https://covid19.alfaisal.my.id/" />
+  <link rel="preconnect" href="https://disease.sh/v3/covid-19/" />
+  <link rel="preconnect" href="https://corona.lmao.ninja/v2/" />
+  <link rel="preconnect" href="https://covid19.mathdro.id/api/" />
+  <link rel="preconnect" href="https://www.google-analytics.com/" />
+  <link rel="preconnect" href="https://www.googletagmanager.com/" />
+  <link rel="preconnect" href="https://storage.googleapis.com/" />
+  <link rel="preconnect" href="https://platform.twitter.com/" />
   <link rel="preload" href="https://twimg.com/" />
   <link rel="preload" href="https://abs.twimg.com/" />
   <link rel="preload" href="https://pbs.twimg.com/" />
@@ -148,56 +145,13 @@
           url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
           url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
     }
-    /* roboto-300 - latin */
-    @font-face {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.eot'); /* IE9 Compat Modes */
-      src: local('Roboto Light'), local('Roboto-Light'),
-          url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-          url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.woff') format('woff'), /* Modern Browsers */
-          url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-          url('%PUBLIC_URL%/assets/fonts/roboto-v20-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
-    }
   </style>
   <!-- Styling -->
-  <style>
+  <style type="text/css">
     body {
       font-family: "Quicksand", "sans-serif";
       font-weight: 500;
     }
-    html,
-    body {
-      margin:0;
-      padding:0
-    }
-    #no-script {
-        position:absolute;
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-        background:#f2efe9;
-      }
-    .no-scipt-message {
-        position:absolute;
-        font-family: 'Roboto', sans-serif;
-        left:50%;
-        top:50%;
-        width:575px;
-        transform:translateX(-50%) translateY(-50%);
-        transform:translateX(-50%) translateY(-50%);
-        background:url('%PUBLIC_URL%/assets/noscript/pegman_sherlock.png') no-repeat;
-        background-size:160px 193px;
-        height:143px;
-        padding-top:50px;
-        padding-left:200px;
-        font-size:30px;
-        font-weight:300;
-      }
   </style>
 </head>
 
@@ -208,15 +162,7 @@
       height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <noscript>
-    <div id="no-script"></div>
-      <div class="no-scipt-message">
-        <div>
-          When you have eliminated the <b>JavaScript</b>, whatever remains must be an empty page.
-        </div>
-      </div>
-    </div>
-  </noscript>
+  <noscript></noscript>
   <div id="root"></div>
   <script importance="high">
     if ('serviceWorker' in navigator) {
