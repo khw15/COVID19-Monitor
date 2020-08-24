@@ -1,23 +1,9 @@
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot'); /* IE9 Compat Modes */
-  src: local(''),
-      url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-      url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff') format('woff'), /* Modern Browsers */
-      url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-      url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
-}
-
 body {
+  font-family: "Quicksand", "sans-serif";
+  font-weight: 500;
   margin: 0;
   color: #4a5568;
   background: #f7fafc;
-  font-family: "Quicksand", "sans-serif";
-  font-weight: 500;
 }
 
 code {
