@@ -1,6 +1,6 @@
 {
   "name": "covid19-monitor-ina",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "homepage": "/",
   "dependencies": {
@@ -40,7 +40,7 @@
     ]
   },
   "main": "purgecss.config.js",
-  "author": "",
+  "author": "i315",
   "license": "ISC",
   "description": "",
   "devDependencies": {
