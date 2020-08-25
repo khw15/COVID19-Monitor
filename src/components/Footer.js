@@ -34,7 +34,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            andrew-paglinawan
+            Andrew Paglinawan
           </a>
         </span>
       </p>
