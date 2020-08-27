@@ -56,11 +56,11 @@ const Footer = () => {
         <span className="p-1">
           Dipersembahkan oleh{' '}
           <a 
-          href="mailto:faisal-a-f-rahman@i315.my.id" 
+          href="https://github.com/i315/COVID19-Monitor" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="Kirim surel ke webmaster"
+          title="GitHub"
           >
             i315
           </a>{' '}
@@ -68,8 +68,8 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          <a href="https://www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262&refurl=https://covid19.alfaisal.my.id/" title="DMCA.com Protection Status" class="dmca-badge" target="_blank" rel="noopener noreferrer">
-            <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262"  alt="DMCA.com Protection Status" />
+          <a href="https://www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262&refurl=https://covid19.alfaisal.my.id/" title="Status Proteksi DMCA.com" class="dmca-badge" target="_blank" rel="noopener noreferrer">
+            Dilindungi oleh DMCA
           </a>
           <script src="/assets/script/DMCABadgeHelper.min.js"></script>
         </span>
