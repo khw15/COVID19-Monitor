@@ -12,3 +12,4 @@ export { default as BERSIN } from "./sneeze.svg"
 export { default as KUMPUL } from "./distance.svg" 
 export { default as FB } from './fb.svg'
 export { default as TW } from './tw.svg'
+export { default as WA } from './wa.svg'
