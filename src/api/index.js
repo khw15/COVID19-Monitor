@@ -57,7 +57,7 @@ export const idData = async () => {
   export const idDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/id?lastdays=all`
+        `${NinjaUrl}historical/id?lastdays=14`
       ).then((res) => res.json())
       return {
         confirmed: data.timeline.cases,
@@ -72,7 +72,7 @@ export const idData = async () => {
   export const globalDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}all?lastdays=all`
+        `${NinjaUrl}all?lastdays=14`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
@@ -93,7 +93,7 @@ export const idData = async () => {
   export const globalDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/all?lastdays=all`
+        `${NinjaUrl}historical/all?lastdays=14`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,

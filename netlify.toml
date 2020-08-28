@@ -1,7 +1,4 @@
 [[plugins]]
-package = "netlify-plugin-image-optim"
-
-[[plugins]]
 package = "netlify-plugin-hashfiles"
 
   [plugins.inputs]
