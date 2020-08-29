@@ -14,7 +14,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             Smashicons
-          </a> dan {' '}
+          </a>, {' '}
           <a
             href="https://www.flaticon.com/authors/freepik"
             title="Freepik"
@@ -23,19 +23,30 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             Freepik
-          </a>
-        </span>
-        <span className="p-1">
-          Fon oleh {' '}
-          <a 
-            href="https://github.com/andrew-paglinawan/QuicksandFamily"
-            title="andrew-paglinawan"
+          </a> dan {' '}
+          <a
+            href="https://www.flaticon.com/authors/becris"
+            title="Becris"
             className="text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Andrew Paglinawan
+            Becris
           </a>
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+            Fon oleh {' '}
+            <a 
+              href="https://github.com/andrew-paglinawan/QuicksandFamily"
+              title="Andrew Paglinawan"
+              className="text-blue-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Andrew Paglinawan
+            </a>
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">

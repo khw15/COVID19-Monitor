@@ -18,7 +18,7 @@ import {
 
 import {
   TANGAN,
-  DOKTER,
+  JGNSENTUH,
   BERSIN,
   MASKER,
   KESEHATAN,
@@ -588,7 +588,7 @@ const URL_WA_SHARE =
            menjaga jarak fisik minimal 1 meter."
         />
         <Tips
-          image={DOKTER}
+          image={JGNSENTUH}
           title="Hindari menyentuh area wajah"
           description="Tangan menyentuh berbagai 
           permukaan benda dan virus penyakit ini dapat tertempel di tangan. Tangan yang terkontaminasi 
