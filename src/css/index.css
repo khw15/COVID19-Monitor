@@ -1,9 +1,12 @@
+/* quicksand-500 - latin */
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-  src: url('./fonts/quicksand.woff2');
+  src: local(''),
+       url('./fonts/quicksand.woff2') format('woff2'),
+       url('./fonts/quicksand.woff') format('woff'),
+       url('./fonts/quicksand.ttf') format('ttf');
 }
 
 body {
