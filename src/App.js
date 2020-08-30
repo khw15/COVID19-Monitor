@@ -352,8 +352,8 @@ const URL_WA_SHARE =
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
         * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kementerian Kesehatan
-        Republik Indonesia pada hari ini atau keterlambatan pembaruan data atau tidak 
-        adanya koneksi internet
+        Republik Indonesia pada hari ini atau tidak adanya koneksi internet atau 
+        keterlambatan pembaruan data dari API yang kami gunakan
       </p>
       <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 text-left noselect">
         Total
@@ -567,10 +567,9 @@ const URL_WA_SHARE =
       <Tips
           image={TANGAN}
           title="Budayakan cuci tangan"
-          description="Seringlah mencuci tangan Anda dengan air bersih mengalir dan sabun, atau 
-          cairan antiseptik berbahan dasar alkohol. Mengapa? Mencuci tangan dengan air bersih 
-          yang mengalir dan sabun, atau cairan antiseptik berbahan dasar alkohol dapat membunuh 
-          virus di tangan Anda."
+          description="Seringlah mencuci tangan Anda dengan air bersih mengalir dan sabun selama 20 detik. 
+          Mengapa? Mencuci tangan dengan air bersih yang mengalir dan sabun, atau cairan antiseptik 
+          berbahan dasar alkohol dapat membunuh virus di tangan Anda."
         />
         <Tips
           image={SOCIAL_DISTANCING}
