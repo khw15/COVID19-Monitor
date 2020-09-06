@@ -22,7 +22,10 @@
   </script>
   <!-- End Google Tag Manager -->
 
+  <!-- Site data-->
   <title>COVID-19 ID Stats &#8211; Statistik COVID-19 di Indonesia dan Dunia</title>
+  <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json" />
 
   <!-- Metadata -->
   <meta charset="utf-8">
@@ -73,10 +76,6 @@
   <link rel="dns-prefetch" href="https://cdn.syndication.twimg.com/" />
   <link rel="dns-prefetch" href="https://syndication.twitter.com/" />
   <link rel="dns-prefetch" href="https://twitter.com/" />
-
-  <!-- Site data-->
-  <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico" />
-  <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json" />
 
   <!-- Apple Splash Screen-->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -134,7 +133,7 @@
   <noscript></noscript>
   <div id="root"></div>
   <script type="text/javascript" importance="high">
-    if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/service-worker.js');
     });
