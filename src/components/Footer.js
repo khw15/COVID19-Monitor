@@ -39,13 +39,13 @@ const Footer = () => {
         <span className="p-1">
             Fon oleh {' '}
             <a 
-              href="https://github.com/andrew-paglinawan/QuicksandFamily"
-              title="Andrew Paglinawan"
+              href="https://fonts.google.com/specimen/Lato#about"
+              title="Łukasz Dziedzic"
               className="text-blue-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Andrew Paglinawan
+              Łukasz Dziedzic
             </a>
         </span>
       </p>

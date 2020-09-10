@@ -1,17 +1,16 @@
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Lato';
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/quicksand.woff2') format('woff2'),
-       url('./fonts/quicksand.woff') format('woff'),
-       url('./fonts/quicksand.ttf') format('ttf');
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('./fonts/Lato-Regular.woff2') format('woff2'),
+       url('./fonts/Lato-Regular.woff') format('woff'),
+       url('./fonts/Lato-Regular.ttf') format('ttf');
 }
 
 body {
-  font-family: "Quicksand", "sans-serif";
-  font-weight: 500;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
   margin: 0;
   color: #4a5568;
   background: #f7fafc;
