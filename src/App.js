@@ -315,7 +315,7 @@ const URL_FB_SHARE =
             <img
               src={TIME}
               width="16"
-              alt="Clock"
+              alt="Jam"
               className="inline clock mr-1"
             />{' '}
           Diperbarui <ReactTimeAgo date={update} live={false} formatter={formatter} />{' '}
