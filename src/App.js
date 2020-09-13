@@ -458,6 +458,14 @@ const URL_FB_SHARE =
           count={testsGlobal}
           delay={50}
         />
+
+        <Box
+          classNameCount="text-3xl md:text-4xl leading-normal block text-indigo-600"
+          title="Negara yang Terinfeksi"
+          count={countriesAffected}
+          delay={50}
+        />
+
         <Box
           hasPercent
           classNameCount="text-3xl md:text-4xl leading-normal block"
@@ -520,12 +528,6 @@ const URL_FB_SHARE =
           helpBorder="border-red-500"
         />
 
-        <Box
-          classNameCount="text-3xl md:text-4xl leading-normal block text-indigo-600"
-          title="Negara yang Terinfeksi"
-          count={countriesAffected}
-          delay={300}
-        />
       </div>
 
       <TombolGrafik
