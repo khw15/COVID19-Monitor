@@ -79,10 +79,9 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          <a href="https://www.dmca.com/Protection/Status.aspx?ID=2d3cbc92-e9c1-475d-9d44-4ba74266d262&refurl=https://covid19.alfaisal.my.id/" title="Status Proteksi DMCA.com" class="dmca-badge" target="_blank" rel="noopener noreferrer">
+          <a href="https://s.id/DMCA-Covid19" title="Proteksi DMCA.com" target="_blank" rel="noopener noreferrer">
             Dilindungi oleh DMCA
           </a>
-          <script src="/assets/script/DMCABadgeHelper.min.js"></script>
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
