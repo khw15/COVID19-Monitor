@@ -787,7 +787,7 @@ const URL_FB_SHARE =
       </div>
 
       <div className="mt-10 md:mt-10 text-3xl" translate="no">
-        #PakaiMasker{' '}
+        Ayo Pakai Masker{' '}
         <span role="img" aria-label="home">
           😷
         </span>
