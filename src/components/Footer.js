@@ -87,8 +87,8 @@ const Footer = () => {
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
-            Segala kesalahan dan/atau kerugian timbul oleh data yang ditayangkan di 
-            situs ini bukan tanggung jawab pengembang
+            Segala kesalahan dan/atau kerugian yang timbul oleh data yang ditayangkan di 
+            situs ini bukan tanggungjawab pengembang
           </afiliasi>
         </span>
       </p>
