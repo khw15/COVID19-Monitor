@@ -23,7 +23,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             Freepik
-          </a> dan {' '}
+          </a>, dan {' '}
           <a
             href="https://www.flaticon.com/authors/becris"
             title="Becris"
@@ -37,21 +37,7 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-            Fon oleh {' '}
-            <a 
-              href="https://github.com/andrew-paglinawan/QuicksandFamily"
-              title="Andrew Paglinawan"
-              className="text-blue-500"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Andrew Paglinawan
-            </a>
-        </span>
-      </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <span className="p-1">
-          API oleh{' '}
+          Data oleh{' '}
           <a 
           href="https://disease.sh/" 
           className="text-blue-500"
@@ -67,13 +53,27 @@ const Footer = () => {
         <span className="p-1">
           Dipersembahkan oleh{' '}
           <a 
-          href="https://github.com/i315/COVID19-Monitor" 
+          href="https://github.com/Zenn315/COVID19-Monitor" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="GitHub"
+          title="GitHub Zenn" 
           >
-            i315
+            Zenn
+          </a>{' '}
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+          Layanan CDN oleh{' '}
+          <a 
+          href="https://www.netlify.com/" 
+          className="text-blue-500"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Netlify &#8211; All-in-one platform for automating modern web projects"
+          >
+            Netlify
           </a>{' '}
         </span>
       </p>
@@ -87,14 +87,7 @@ const Footer = () => {
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
-              SITUS INI TIDAK BERAFILIASI DENGAN PEMERINTAH
-          </afiliasi>
-        </span>
-      </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <span className="p-1 text-red-600">
-          <afiliasi>
-            Segala kesalahan dan/atau kerugian yang ditimbulkan oleh data yang ditayangkan di 
+            Segala kesalahan dan/atau kerugian timbul oleh data yang ditayangkan di 
             situs ini bukan tanggung jawab pengembang
           </afiliasi>
         </span>

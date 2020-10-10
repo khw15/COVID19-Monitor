@@ -83,7 +83,7 @@ const Kontak = () => {
                         <br></br>
                         <span className="text-xs">
                             <a 
-                                href="https://wa.me/628122123123" 
+                                href="https://wa.me/628122123123?text=PLN" 
                                 target="_blank" 
                                 rel="noopener noreferrer">
                                 Kirim pesan via WhatsApp
@@ -126,7 +126,7 @@ const Kontak = () => {
                     <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
                         <a 
                             href="mailto:covid19-pusat@ombudsman.go.id" 
-                            className="text-blue-400 text-xs block p-2">
+                            className="text-blue-400 text-s block p-2">
                             Kirim surel
                         </a>
                     </td>
