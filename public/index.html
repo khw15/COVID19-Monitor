@@ -24,8 +24,8 @@
 
   <!-- Site data-->
   <title>COVID-19 ID Stats &#8211; Statistik COVID-19 di Indonesia dan Dunia</title>
-  <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico" />
-  <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json" />
+  <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <!-- Metadata -->
   <meta charset="utf-8">
@@ -49,7 +49,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Statistik COVID-19 Indonesia dan Dunia" />
   <meta property="og:description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia." />
-  <meta property="og:image" content="https://covid19.alfaisal.my.id/assets/Logo/logo1080.png" />
+  <meta property="og:image" content="https://covid19.alfaisal.my.id/images/logo1080.png" />
 
   <!-- Twitter Meta Tags -->
   <meta property="twitter:url" content="https://covid19.alfaisal.my.id/" />
@@ -57,7 +57,7 @@
   <meta name="twitter:title" content="Statistik COVID-19 Indonesia dan Dunia" />
   <meta name="twitter:description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia."  />
   <meta name="twitter:creator" content="@Zenn315" />
-  <meta name="twitter:image" content="https://covid19.alfaisal.my.id/assets/Logo/logo1080.png" />
+  <meta name="twitter:image" content="https://covid19.alfaisal.my.id/images/logo1080.png" />
 
   <!-- External DNS Preload -->
   <link rel="dns-prefetch" href="//covid19.alfaisal.my.id/" />
@@ -87,16 +87,11 @@
   <!-- End Google Tag Manager (noscript) -->
   <noscript></noscript>
   <div id="root"></div>
-  <script type="text/javascript" importance="high">
-  if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(reg) {
-    // registration worked
-    console.log('Registration succeeded. Scope is ' + reg.scope);
-  }).catch(function(error) {
-    // registration failed
-    console.log('Registration failed with ' + error);
-  });
-  };
+  <script 
+    href="%PUBLIC_URL%/SW-Loader.js"
+    type="text/javascript" 
+    importance="high"
+  >
   </script>
 </body>
 </html>
