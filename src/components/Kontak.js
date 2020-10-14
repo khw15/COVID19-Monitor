@@ -51,19 +51,6 @@ const Kontak = () => {
                         <br></br>
                     </td>
                 </tr>
-
-                <tr className="bg-white">
-                    <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
-                        Bantuan Langsung Tunai Desa
-                    </td>
-                    <td className="border-b border-l px-2 md:px-4 py-2 text-sm md:text-base">
-                        <a 
-                            href="tel:1500040" 
-                            className="text-blue-400 block p-2">
-                            1500040
-                        </a>
-                    </td>
-                </tr>
                 <tr className="bg-white">
                     <td className="border-b px-2 md:px-4 py-2 text-left text-sm md:text-base noselect">
                         Pembebasan Biaya Listrik (PLN)
