@@ -85,6 +85,15 @@
   <!-- End Google Tag Manager (noscript) -->
   <noscript></noscript>
   <div id="root"></div>
-  <link href="%PUBLIC_URL%/scripts/SW-Loader.js" rel="text/javascript">
+  <script 
+    type="text/javascript" 
+    importance="high"
+  >
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+  </script>
 </body>
 </html>
