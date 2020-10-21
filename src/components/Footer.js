@@ -51,7 +51,7 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Dipersembahkan oleh{' '}
+          Developed with 💙 on Earth by{' '}
           <a 
           href="https://github.com/Zenn315/COVID19-Monitor" 
           className="text-blue-500"
@@ -65,7 +65,7 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Layanan CDN oleh{' '}
+          Layanan CDN dan hosting oleh{' '}
           <a 
           href="https://www.netlify.com/" 
           className="text-blue-500"
