@@ -51,7 +51,7 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Developed with 💙 on Earth by{' '}
+          Dikembangkan di Bumi oleh{' '}
           <a 
           href="https://github.com/Zenn315/COVID19-Monitor" 
           className="text-blue-500"
