@@ -51,20 +51,6 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Dikembangkan di Bumi oleh{' '}
-          <a 
-          href="https://github.com/Zenn315/COVID19-Monitor" 
-          className="text-blue-500"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub Zenn" 
-          >
-            Zenn
-          </a>{' '}
-        </span>
-      </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <span className="p-1">
           Layanan CDN dan hosting oleh{' '}
           <a 
           href="https://www.netlify.com/" 
@@ -74,6 +60,22 @@ const Footer = () => {
           title="Netlify &#8211; All-in-one platform for automating modern web projects"
           >
             Netlify
+          </a>{' '}
+        </span>
+      </p>
+      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
+        <span className="p-1">
+          Developed with <span role="img" aria-label="Blue Love">💙 </span>
+           on <span role="img" aria-label="Earth">🌍 </span>
+           by{' '}
+          <a 
+          href="https://github.com/Zenn315/COVID19-Monitor" 
+          className="text-blue-500"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub Zenn" 
+          >
+            Zenn
           </a>{' '}
         </span>
       </p>
