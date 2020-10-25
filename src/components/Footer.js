@@ -51,7 +51,7 @@ const Footer = () => {
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1">
-          Layanan CDN dan hosting oleh{' '}
+          Hosting and CDN by{' '}
           <a 
           href="https://www.netlify.com/" 
           className="text-blue-500"
