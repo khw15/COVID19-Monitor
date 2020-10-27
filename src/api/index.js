@@ -1,5 +1,5 @@
 const MathdroidUrl = "https://covid19.mathdro.id/api/";
-const NinjaUrl = "https://disease.sh/v2/";
+const NinjaUrl = "https://corona.lmao.ninja/v2/";
 
 export const idData = async () => {
     try {
