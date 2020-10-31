@@ -1,125 +1,105 @@
 <!DOCTYPE html>
-<html translate="no">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="%PUBLIC_URL%/assets/script/gtag.js"></script>
-    <script src="%PUBLIC_URL%/assets/script/gtag.dataLayer.js"></script>
+<html lang="id" translate="yes">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171777694-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
-    <title>COVID-19 Stats & Maps &#8211; Peta persebaran dan Statistik COVID-19 di Dunia</title>
-  
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    <meta name="google" content="nositelinkssearchbox" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="google-site-verification" content="p_yfCFbg0-xxoeRmbLhcHsCHjHHBQCkdN_xdBt7FBT0" />
-    <meta name=”robots” content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#EEEEEE" />
-    <meta name="description"
-      content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia." />
-    <meta name="keywords" 
-    content="covid-19, covid19, corona, virus corona, covid19 indonesia, covid-19 indonesia, coronavirus, corona indonesia" />
-    <meta name="description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia.">
-  
-    <!-- Internal Links Preload -->
-    <link rel="preload" as="font" type="font/woff" 
-    href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff"
-    crossorigin="crossorigin">
+    gtag('config', 'UA-171777694-1');
+  </script>
 
-    <link rel="preload" as="font" type="font/woff2" 
-    href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff2"
-    crossorigin="crossorigin">
+  <!-- Google Tag Manager -->
+  <script 
+    href="%PUBLIC_URL%/scripts/GTM-Head.js"
+    type="text/javascript" 
+    importance="high"
+  ></script>
+  <!-- End Google Tag Manager -->
 
-    <link rel="preload" as="font" type="font/truetype" 
-    href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf"
-    crossorigin="crossorigin">
+  <!-- Site data-->
+  <title>COVID-19 ID Stats &#8211; Statistik COVID-19 di Indonesia dan Dunia</title>
+  <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="preload" as="font" type="xml/svg" 
-    href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg"
-    crossorigin="crossorigin">
-    
-    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot"
-    crossorigin="crossorigin">
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="id_ID" />
+  <meta name='dmca-site-verification' content='UDRvaldaMnh3SlN2S2c5R1RYUklQYWFTeTA5R3NTcnJ2Z2VUVWI2cHNIVT01' />
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia." 
+  />
+  <meta name="keywords" 
+    content="covid-19, covid19, corona, virus corona, covid19 indonesia, covid-19 indonesia, coronavirus, corona indonesia" 
+  />
+  <meta name="description" 
+    content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia." 
+  />
 
-    <link rel="preload" as="script" type="text/javascript" 
-    href="%PUBLIC_URL%/assets/script/gtag.js"
-    crossorigin="crossorigin">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://covid19.alfaisal.my.id/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Statistik COVID-19 Indonesia dan Dunia" />
+  <meta property="og:description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia." />
+  <meta property="og:image" content="https://covid19.alfaisal.my.id/images/logo1080.png" />
 
-    <link rel="preload" as="script" type="text/javascript" 
-    href="%PUBLIC_URL%/assets/script/gtag.dataLayer.js"
-    crossorigin="crossorigin">
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:url" content="https://covid19.alfaisal.my.id/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Statistik COVID-19 Indonesia dan Dunia" />
+  <meta name="twitter:description" content="Tetap update dengan statistik COVID19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia."  />
+  <meta name="twitter:creator" content="@Zenn315" />
+  <meta name="twitter:image" content="https://covid19.alfaisal.my.id/images/logo1080.png" />
 
-    <link rel="preload" as="image" type="image/png" 
-    href="%PUBLIC_URL%/assets/Logo/maskable_icon.png"
-    crossorigin="crossorigin">
-  
-    <!-- Site data-->
-    <link rel="icon" href="%PUBLIC_URL%/assets/Logo/favicon.ico">
-    <link rel="manifest" href="%PUBLIC_URL%/assets/json/manifest.json">
-    <link rel="canonical" href="https://covid19.i315.my.id/">
-  
-    <!-- Apple Splash Screen-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- External DNS Preload -->
+  <link rel="dns-prefetch" href="//covid19.alfaisal.my.id/" />
+  <link rel="dns-prefetch" href="//corona.lmao.ninja/v2/" />
+  <link rel="dns-prefetch" href="//covid19.mathdro.id/api/" />
+  <link rel="dns-prefetch" href="//www.google-analytics.com/" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com/" />
+  <link rel="dns-prefetch" href="//storage.googleapis.com/" />
+  <link rel="dns-prefetch" href="//abs.twimg.com" />
+  <link rel="dns-prefetch" href="//api.twitter.com" />
+  <link rel="dns-prefetch" href="//pbs.twimg.com" />
+  <link rel="dns-prefetch" href="//t.co" />
+  <link rel="dns-prefetch" href="//video.twimg.com" />
+  <link rel="dns-prefetch" href="//ton.twimg.com/" />
+  <link rel="dns-prefetch" href="//cdn.syndication.twimg.com/" />
+  <link rel="dns-prefetch" href="//syndication.twitter.com/" />
+  <link rel="dns-prefetch" href="//platform.twitter.com/" />
+  <link rel="dns-prefetch" href="//twitter.com/" />
+  <link rel="preconnect" href="//abs.twimg.com" />
+  <link rel="preconnect" href="//api.twitter.com" />
+  <link rel="preconnect" href="//pbs.twimg.com" />
+  <link rel="preconnect" href="//t.co" />
+  <link rel="preconnect" href="//video.twimg.com" />
+</head>
 
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/assets/Apple Splash/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-
-    <!-- Styling -->
-    <style>
-      /* quicksand-500 - latin */
-      @font-face {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot'); /* IE9 Compat Modes */
-        src: local(''),
-            url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-            url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.woff') format('woff'), /* Modern Browsers */
-            url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('%PUBLIC_URL%/assets/fonts/quicksand-v21-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
-      }
-
-      body {
-        font-family: "Quicksand", "sans-serif";
-        font-weight: 500;
-      }
-    </style>
-  </head>
-  <body class="hidden antialiased transition-colors duration-200 ease-in-out">
+<body>
+  <!-- Google Tag Manager (noscript) -->
     <noscript>
-      Oops, nampaknya JavaScript dinonaktifkan. Anda harus mengaktifkan 
-      JavaScript agar aplikasi ini berjalan optimal. ^_^
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD7G95W"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
     </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- End Google Tag Manager (noscript) -->
+  <noscript>Anda harus mengaktifkan JavaScript untuk menjalankan aplikasi ini</noscript>
+  <div id="root"></div>
+  <script 
+    type="text/javascript" 
+    importance="high"
+  >
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+  </script>
+</body>
 </html>

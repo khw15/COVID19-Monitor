@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/quicksand.woff2') format('woff2'),
+       url('./fonts/quicksand.woff') format('woff'),
+       url('./fonts/quicksand.ttf') format('ttf');
+}
+
+body {
+  font-family: "Quicksand", "sans-serif";
+  font-weight: 500;
+  margin: 0;
+  color: #4a5568;
+  background: #f7fafc;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: #545666;
+  border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  background: #545666;
+ }
+ ::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius: 7px;
+ }
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
