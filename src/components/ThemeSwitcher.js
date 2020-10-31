@@ -8,7 +8,7 @@ const DarkModeSwitcher = (props) => {
         id="mode-switcher"
         onclick="
           localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
-          localStorage.getItem('mode') === 'dark' ? document.querySelector('App').classList.add('dark-mode') : document.querySelector('App').classList.remove('dark-mode');
+          localStorage.getItem('mode') === 'dark' ? document.querySelector('App').classList.add('dark') : document.querySelector('body').classList.remove('dark');
         "
         checked={!props.darkMode}
         onChange={() => {

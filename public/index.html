@@ -79,28 +79,29 @@
   <link rel="preconnect" href="//pbs.twimg.com" />
   <link rel="preconnect" href="//t.co" />
   <link rel="preconnect" href="//video.twimg.com" />
+
+  
+
+  <script type="text/javascript">
+    // before turbolinks renders remove or add class dark - this is needed to prevent a flash of previous styles
+    document.addEventListener("turbolinks:before-render", (event)=> {
+      if (localStorage.getItem('mode') === 'light') event.data.newBody.classList.remove('dark')
+      if (localStorage.getItem('mode') === 'dark')  event.data.newBody.classList.add('dark')
+    })
+
+    // after turbolinks fully loads readd or remove class dark - this is needed because turbolinks strips all scripts :/
+    document.addEventListener("turbolinks:load", ()=> {
+      ((localStorage.getItem('mode') || 'light') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
+    });
+  </script>
+
+  <script>
+    // after turbolinks finishes loading check localStorage mode and check the toggle if it needs to be darkmode
+    document.addEventListener("turbolinks:load", ()=> {
+      if(localStorage.getItem('mode') === 'dark') document.getElementById('toggle-checkbox').checked = true
+    });
+  </script>
 </head>
-
-<script type="text/javascript">
-    
-  // before turbolinks renders remove or add class dark - this is needed to prevent a flash of previous styles
-  document.addEventListener("turbolinks:before-render", (event)=> {
-    if (localStorage.getItem('mode') === 'light') event.data.newBody.classList.remove('dark-mode')
-    if (localStorage.getItem('mode') === 'dark')  event.data.newBody.classList.add('dark-mode')
-  })
-
-  // after turbolinks fully loads readd or remove class dark - this is needed because turbolinks strips all scripts :/
-  document.addEventListener("turbolinks:load", ()=> {
-    ((localStorage.getItem('mode') || 'light') === 'dark') ? document.querySelector('App').classList.add('dark-mode') : document.querySelector('App').classList.remove('dark-mode');
-  });
-</script>
-
-<script>
-  // after turbolinks finishes loading check localStorage mode and check the toggle if it needs to be darkmode
-  document.addEventListener("turbolinks:load", ()=> {
-    if(localStorage.getItem('mode') === 'dark') document.getElementById('toggle-checkbox').checked = true
-  });
-</script>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
