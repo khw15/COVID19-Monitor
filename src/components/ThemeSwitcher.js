@@ -6,6 +6,10 @@ const DarkModeSwitcher = (props) => {
       <input
         type="checkbox"
         id="mode-switcher"
+        onclick="
+          localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
+          localStorage.getItem('mode') === 'dark' ? document.querySelector('App').classList.add('dark-mode') : document.querySelector('App').classList.remove('dark-mode');
+        "
         checked={!props.darkMode}
         onChange={() => {
           props.setDarkMode(!props.darkMode)
