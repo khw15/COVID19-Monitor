@@ -80,13 +80,6 @@ const Footer = () => {
         </span>
       </p>
       <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
-        <span className="p-1">
-          <a href="https://s.id/DMCA-Covid19" title="Proteksi DMCA.com" target="_blank" rel="noopener noreferrer">
-            Dilindungi oleh DMCA
-          </a>
-        </span>
-      </p>
-      <p className="flex flex-col md:flex-row justify-center items-center leading-tight text-xs">
         <span className="p-1 text-red-600">
           <afiliasi>
             Segala kesalahan dan/atau kerugian yang timbul oleh data yang ditayangkan di 
