@@ -4,7 +4,7 @@ const NinjaUrl = "https://corona.lmao.ninja/v2/";
 export const idData = async () => {
     try {
       const data = await fetch(
-        `${MathdroidUrl}countries/id/`
+        `${MathdroidUrl}countries/kr`
       ).then((res) => res.json())
       return {
         confirmed: data.confirmed.value,
@@ -36,7 +36,7 @@ export const idData = async () => {
   export const idDataComplete = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}countries/id`
+        `${NinjaUrl}countries/kr`
       ).then((res) => res.json())
       return {
         confirmed: data.cases,
@@ -57,7 +57,7 @@ export const idData = async () => {
   export const idDataHistorical = async () => {
     try {
       const data = await fetch(
-        `${NinjaUrl}historical/id?lastdays=60`
+        `${NinjaUrl}historical/kr?lastdays=60`
       ).then((res) => res.json())
       return {
         confirmed: data.timeline.cases,
