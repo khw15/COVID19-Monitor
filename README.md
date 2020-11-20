@@ -2,4 +2,6 @@
 
 ## COVID-19 ID Monitor
 
-Visit website [here](http://covid19.alfaisal.my.id/)
+Menyajikan data terbaru seputar perkembangan COVID-19 di Indonesia maupun di dunia.
+
+Kunjungi [di sini](http://covid19.alfaisal.my.id/)
