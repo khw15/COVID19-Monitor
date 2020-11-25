@@ -17,22 +17,6 @@ body {
   background: #f7fafc;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
- }
- ::-webkit-scrollbar-thumb {
-  background: #545666;
-  border-radius: 10px;
- }
- ::-webkit-scrollbar-thumb:hover{
-  background: #545666;
- }
- ::-webkit-scrollbar-track{
-  background: #ffffff;
-  border-radius: 7px;
- }
-
 .noselect {
   -webkit-user-select: none;
   -moz-user-select: none;

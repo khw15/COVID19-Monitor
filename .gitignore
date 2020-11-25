@@ -4,3 +4,4 @@ package-lock.json
 .firebase
 *.log
 firebase.json
+.eslintcache
