@@ -3,16 +3,14 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="%PUBLIC_URL%/scripts/UA-171777694-1.js"></script>
-  <script src="%PUBLIC_URL%/scripts/UA-171777694-1_Head.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70XXSRXK1Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <!-- Google Tag Manager -->
-  <script 
-    href="%PUBLIC_URL%/scripts/GTM-Head.js"
-    type="text/javascript" 
-    importance="high"
-  ></script>
-  <!-- End Google Tag Manager -->
+    gtag('config', 'G-70XXSRXK1Q');
+  </script>
 
   <!-- Site data-->
   <title>COVID-19 ID Stats &#8211; Statistik COVID-19 di Indonesia dan Dunia</title>
@@ -88,12 +86,6 @@
   <!-- End Google Tag Manager (noscript) -->
   <noscript>Anda harus mengaktifkan JavaScript untuk menjalankan aplikasi ini</noscript>
   <div id="root"></div>
-  <script type="text/javascript" importance="high">
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-  </script>
+  <script type="text/javascript" src="%PUBLIC_URL%/scripts/Service-Worker.js" ></script>
 </body>
 </html>
