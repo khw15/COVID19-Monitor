@@ -312,13 +312,9 @@ const URL_FB_SHARE =
               !updateTimeVisibility && 'hidden'
             }`}
           >
-            <img
-              src={TIME}
-              width="16"
-              alt="Jam"
-              className="inline clock mr-1"
+            <img src={TIME} width="16" alt="Jam" className="inline clock mr-1"
             />{' '}
-          Diperbarui <ReactTimeAgo date={update} live={false} formatter={formatter} />{' '}
+          Diperbarui <ReactTimeAgo date={update} live={false} formatter={formatter} />
         </p>
       </h3>
       <div className="body w-11/12 lg:w-5/6 mx-auto clearfix">
@@ -345,7 +341,7 @@ const URL_FB_SHARE =
 
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
-        * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kementerian Kesehatan
+        * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kemenkes
         Republik Indonesia pada hari ini atau tidak adanya koneksi internet atau 
         keterlambatan pembaruan data dari API yang kami gunakan
       </p>

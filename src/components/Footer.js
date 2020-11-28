@@ -75,7 +75,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           title="GitHub Zenn" 
           >
-            Zenn
+            Zenn315
           </a>{' '}
         </span>
       </p>
@@ -83,7 +83,7 @@ const Footer = () => {
         <span className="p-1 text-red-600">
           <afiliasi>
             Segala kesalahan dan/atau kerugian yang timbul oleh data yang ditayangkan di 
-            situs ini bukan tanggungjawab pengembang
+            situs ini bukan tanggungjawab pengembang situs
           </afiliasi>
         </span>
       </p>
