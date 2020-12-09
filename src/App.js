@@ -702,7 +702,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="KemenkesRI"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
             />
@@ -715,7 +714,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="KemenkesRI"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
               lang="id"
@@ -731,7 +729,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="BNPB_Indonesia"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
             />
@@ -744,7 +741,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="BNPB_Indonesia"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
               lang="id"
@@ -760,7 +756,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="KawalCOVID19"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               lang="id"
             />
@@ -773,7 +768,6 @@ const URL_FB_SHARE =
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="KawalCOVID19"
-              chrome="noscrollbar nofooter"
               options={{ height: 500 }}
               theme="dark"
               lang="id"
