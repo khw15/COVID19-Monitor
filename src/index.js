@@ -5,6 +5,8 @@ import './css/index.css'
 import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
+serviceWorkerRegistration.register();
+
 ReactGA.initialize('UA-171777694-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -18,5 +20,3 @@ ReactGA.initialize('UA-171777694-1', {
 });
 
 ReactDOM.render(<App />, document.getElementById('root'))
-
-serviceWorkerRegistration.register();

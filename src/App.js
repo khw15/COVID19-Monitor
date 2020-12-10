@@ -622,7 +622,7 @@ const URL_FB_SHARE =
 
       <p className="text-xs text-right text-gray-500 italic md:w-2/3 py-4 mx-auto pr-4 md:pr-0 noselect">
         Sumber{' '}
-        <a href="https://www.who.int/indonesia/news/novel-coronavirus/qa-for-public"
+        <a href="https://www.who.int/indonesia/news/novel-coronavirus/qa"
         target="_blank"
         rel="noopener noreferrer"
         >
