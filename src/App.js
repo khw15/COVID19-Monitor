@@ -296,7 +296,7 @@ const URL_FB_SHARE =
           </a>
         </div>
   
-        <h2 className="text-5xl p-5 font-hairline noselect" translate="no">
+        <h2 className="text-5xl p-5 font-hairline noselect">
           Indonesia{' '}
           <img src={BENDERA} width="70" className="inline mb-1" alt="Bendera Indonesia" />
         </h2>
@@ -450,7 +450,7 @@ const URL_FB_SHARE =
       <div className="body w-11/12 lg:w-5/6 mx-auto clearfix">
         <Box
           classNameCount="text-3xl md:text-4xl leading-normal block text-blue-700"
-          title="Tes Dilakukan"
+          title="Tes dilakukan"
           count={testsGlobal}
           delay={50}
         />
