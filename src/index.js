@@ -6,8 +6,6 @@ import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 serviceWorkerRegistration.register();
-serviceWorkerRegistration.registerValidSW();
-serviceWorkerRegistration.checkValidServiceWorker();
 
 ReactGA.initialize('UA-171777694-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
