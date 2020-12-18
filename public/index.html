@@ -90,10 +90,44 @@
 </head>
 
 <body>
-  <noscript>
-      <div style="font-size: 20px; font-family: Helvetica,sans-serif; line-height: 24px; margin: 10%; width: 80%;">
-        <p>We've detected that JavaScript is disabled in your browser. You need JavaScript enabled to run this application.</p>
-      </div>
+    <noscript>
+      <style>
+        .errorContainer {
+          background-color: #FFF;
+          color: #0F1419;
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 10%;
+          font-family: Helvetica, sans-serif;
+          font-size: 16px;
+        }
+        .errorButton {
+          margin-top: 3em;
+        }
+        .errorButton a {
+          background: #1DA1F2;
+          border-radius: 2.5em;
+          color: white;
+          padding: 1em 2em;
+          text-decoration: none;
+        }
+        .errorButton a:hover,
+        .errorButton a:focus {
+          background: rgb(26, 145, 218);
+        }
+        #placeholder,
+        #react-root {
+          display: none !important;
+        }
+      </style>
+    <div class="errorContainer">
+      <h1>JavaScript is not available.</h1>
+      <p>We've detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported
+        browser to continue using twitter.com. You can see a list of supported browsers in
+        our Help Center.</p>
+      <p class="errorButton"><a href="https://support.google.com/chrome/answer/114662?hl=id">Help Center</a>
+      </p>
+    </div>
   </noscript>
   <div id="root"></div>
 </body>
