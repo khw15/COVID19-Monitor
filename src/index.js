@@ -14,9 +14,7 @@ ReactGA.initialize('UA-171777694-1', {
     debug: true,
     titleCase: false,
     standardImplementation: true,
-    gaOptions: {
-        gaAddress: './analytics.js'
-      }
+    gaAddress: './analytics.js'
 });
 
 ReactDOM.render(<App />, document.getElementById('root'))
