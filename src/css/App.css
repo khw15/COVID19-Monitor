@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #44475a;
   min-height: 10vh;
   color: white;
 }
@@ -80,7 +80,7 @@
 }
 
 .dark-mode.App {
-  background: #2e3235;
+  background: #282a36;
 }
 
 .dark-mode .text-gray-600 {
