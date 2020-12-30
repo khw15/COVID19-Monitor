@@ -271,7 +271,7 @@ const URL_FB_SHARE =
   
     useEffect(() => {
       const localHours = new Date().getHours()
-      setDarkMode(!(localHours >= 5 && localHours <= 17))
+      setDarkMode(!(localHours >= 6 && localHours <= 17))
   
       getIDData()
       setInterval(getIDData, 300000)
