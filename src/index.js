@@ -14,7 +14,7 @@ ReactGA.initialize('UA-171777694-1', {
     debug: true,
     titleCase: false,
     standardImplementation: true,
-    gaAddress: './analytics.js'
+    gaAddress: 'https://covid19.alfaisal.my.id/analytics.js'
 });
 
 ReactDOM.render(<App />, document.getElementById('root'))
