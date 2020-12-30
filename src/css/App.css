@@ -76,7 +76,7 @@
 
 .dark-mode table td,
 .dark-mode table th {
-  border-color: #383838 !important;
+  border-color: #6272a4 !important;
 }
 
 .dark-mode.App {
@@ -88,7 +88,7 @@
 }
 
 .dark-mode .bg-white {
-  background: #1b1b1b;
+  background: #2d3748;
 }
 
 .dark-mode .text-gray-800,
