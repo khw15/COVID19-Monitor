@@ -14,9 +14,11 @@ ReactGA.initialize('UA-171777694-1', {
     debug: true,
     titleCase: false,
     standardImplementation: true,
+    gaAddress: 'https://covid19.alfaisal.my.id/analytics.js',
     gaOptions: {
-        gaAddress: 'https://covid19.alfaisal.my.id/analytics.js'
-    },
+        cookieExpires: 43200,
+        cookieUpdate: true
+    }
 });
 
 ReactDOM.render(<App />, document.getElementById('root'))
