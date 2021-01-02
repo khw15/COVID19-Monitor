@@ -7,14 +7,13 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 serviceWorkerRegistration.register();
 
-ReactGA.initialize('UA-171777694-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 ReactGA.initialize('UA-171777694-1', {
     debug: true,
     titleCase: false,
     standardImplementation: true,
     gaAddress: 'https://covid19.alfaisal.my.id/analytics.js'
 });
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(<App />, document.getElementById('root'))
