@@ -69,7 +69,7 @@ const Footer = () => {
            on <span role="img" aria-label="Earth">🌍 </span>
            by{' '}
           <a 
-          href="https://github.com/Zenn315/COVID19-Monitor" 
+          href="https://github.com/Zenn315" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
