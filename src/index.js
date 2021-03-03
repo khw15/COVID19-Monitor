@@ -6,6 +6,4 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 serviceWorkerRegistration.register();
 
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 ReactDOM.render(<App />, document.getElementById('root'))
