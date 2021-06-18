@@ -782,7 +782,7 @@ const URL_FB_SHARE =
           😷
         </span>
         <br />
-        Indonesia Bisa!{' '}
+        Semangat Bangkit dari Corona!{' '}
         <span role="img" aria-label="strong">
           💪
         </span>
