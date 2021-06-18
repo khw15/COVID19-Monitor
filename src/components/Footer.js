@@ -73,9 +73,9 @@ const Footer = () => {
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="GitHub Zenn" 
+          title="GitHub Hann" 
           >
-            Zenn315
+            Hann
           </a>{' '}
         </span>
       </p>
