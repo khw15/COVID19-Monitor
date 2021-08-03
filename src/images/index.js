@@ -12,3 +12,4 @@ export { default as BERSIN } from "./bersin.svg"
 export { default as KUMPUL } from "./kumpul.svg" 
 export { default as FB } from './fb.svg'
 export { default as TW } from './tw.svg'
+export { default as TL } from './telegram.svg'
