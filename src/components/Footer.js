@@ -69,13 +69,13 @@ const Footer = () => {
            on <span role="img" aria-label="Earth">🌍 </span>
            by{' '}
           <a 
-          href="https://github.com/hannz15" 
+          href="https://github.com/hann315" 
           className="text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
-          title="GitHub Hann" 
+          title="Hann's GitHub" 
           >
-            Hannz15
+            HANN315
           </a>{' '}
         </span>
       </p>
