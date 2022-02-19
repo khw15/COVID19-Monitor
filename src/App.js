@@ -157,7 +157,7 @@ const URL_FB_SHARE =
         const hours = new Date(res.lastUpdate).getHours()
   
         // Prevents showing yesteredays data from API
-        if (hours >= 12) {
+        if (hours >= 4) {
           setConfirmedTodayID(res.todayCases)
           setDeathsTodayID(res.todayDeaths)
           setTodayRecoveredID(res.todayRecovered)
@@ -341,9 +341,8 @@ const URL_FB_SHARE =
 
       </div>
       <p className="w-11/12 lg:w-5/6 mt-2 mx-auto px-2 italic text-xs text-left mb-4 text-gray-500 leading-normal noselect">
-        * Catatan: Angka 0 menunjukkan belum adanya laporan dari Kemenkes
-        Republik Indonesia pada hari ini atau tidak adanya koneksi internet atau 
-        keterlambatan pembaruan data dari API yang kami gunakan
+        * Catatan: Angka 0 menunjukkan belum adanya laporan dari pada hari ini atau tidak adanya koneksi internet atau 
+        keterlambatan pembaruan data dari API yang kami gunakan. Data ditampilkan hingga pukul 4 pagi keesokan harinya.
       </p>
       <h3 className="w-11/12 lg:w-5/6 mx-auto text-2xl p-2 text-left noselect">
         Total
