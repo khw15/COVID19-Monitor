@@ -29,7 +29,6 @@ import {
   FB,
   TW,
   KUMPUL,
-  TL
 } from './images'
 
 import API from './api'
@@ -40,8 +39,6 @@ const URL_TW_SHARE =
   'https://twitter.com/intent/tweet?url=https://s.id/CORONA19&text=Tetap update dengan statistik COVID-19 terbaru dari jumlah pengetesan yang dilakukan, kasus positif dan aktif, angka kesembuhan dan kematian di Indonesia atau di Dunia.&hashtags=COVID19%2CCORONA'
 const URL_FB_SHARE =
   'https://www.facebook.com/sharer/sharer.php?u=https://s.id/CORONA19'
-const URL_TL_SHARE =
-  'https://t.me/share/url?url=https%3A%2F%2Fcovid19.alfaisal.my.id'
 
   const App = () => {
     // ID
@@ -296,9 +293,6 @@ const URL_TL_SHARE =
           </a>
           <a href={URL_TW_SHARE} className="block pb-2 px-4" target="_blank" rel="noopener noreferrer">
             <img src={TW} alt="Bagikan ke Twitter" title="Bagikan ke Twitter" width="30" />
-          </a>
-          <a href={URL_TL_SHARE} className="block pb-2 px-4" target="_blank" rel="noopener noreferrer">
-            <img src={TL} alt="Bagikan ke Telegram" title="Bagikan ke Telegram" width="30" />
           </a>
         </div>
   

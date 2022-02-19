@@ -1,13 +1,16 @@
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Roboto Serif', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('./fonts/quicksand.woff2') format('woff2');
+  src: url('./fonts/roboto-serif-v5-latin-regular.woff') format('woff');
+  src: url('./fonts/roboto-serif-v5-latin-regular.woff2') format('woff2');
+  src: url('./fonts/roboto-serif-v5-latin-italic.woff') format('woff');
+  src: url('./fonts/roboto-serif-v5-latin-italic.woff2') format('woff2');
 }
 
 body {
-  font-family: "Quicksand", "sans-serif";
+  font-family: 'Roboto Serif', sans-serif;
   font-weight: 500;
   margin: 0;
   color: #4a5568;
