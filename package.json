@@ -16,14 +16,17 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.0",
     "react-timeago": "^6.2.1",
-    "react-twitter-embed": "^4.0.4"
+    "react-twitter-embed": "^4.0.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "purgecss -c purgecss.config.js --output src/css/"
+    "build:css": "purgecss -c purgecss.config.js --output src/css/",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -56,5 +59,6 @@
   "description": "",
   "devDependencies": {
     "@material-ui/core": "^4.11.2"
-  }
+  },
+  "snyk": true
 }
