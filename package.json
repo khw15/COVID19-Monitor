@@ -1,31 +1,45 @@
 {
-  "name": "covid19ph",
-  "version": "0.1.0",
+  "name": "covid19-monitor-id",
+  "version": "3.0.0",
   "private": true,
-  "homepage": "https://covid19.com.ph",
+  "homepage": "/",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "chart.js": "^2.9.3",
-    "react": "^16.13.0",
-    "react-chartjs-2": "^2.9.0",
-    "react-countup": "^4.3.3",
-    "react-dom": "^16.13.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^12.8.3",
+    "chart.js": "^2.9.4",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^2.11.2",
+    "react-countup": "^6.3.1",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.4.0",
-    "react-timeago": "^4.4.0",
-    "react-twitter-embed": "^3.0.3"
+    "react-scripts": "^5.0.0",
+    "react-timeago": "^6.2.1",
+    "react-twitter-embed": "^4.0.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "purgecss -c purgecss.config.js --output src/css/"
+    "build:css": "purgecss -c purgecss.config.js --output src/css/",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "src/api/index.js"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -38,5 +52,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "purgecss.config.js",
+  "author": "Zenn315",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@material-ui/core": "^4.11.2"
+  },
+  "snyk": true
 }
