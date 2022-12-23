@@ -58,7 +58,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@material-ui/core": "^4.11.2"
+    "@material-ui/core": "^4.12.4"
   },
   "snyk": true
 }
