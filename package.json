@@ -17,7 +17,7 @@
     "react-scripts": "^5.0.0",
     "react-timeago": "^6.2.1",
     "react-twitter-embed": "^4.0.4",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.1154.0"
   },
   "scripts": {
     "start": "react-scripts start",
